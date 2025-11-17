@@ -1,0 +1,9 @@
+.venv-ccnet/
+__pycache__/
+*.pyc
+.pytest_cache/
+datasets/custom/outputs/
+weights/*.pth
+weights/*.pthxop96idntmp
+datasets/custom/images/*.jpg
+datasets/custom/images/*.png
