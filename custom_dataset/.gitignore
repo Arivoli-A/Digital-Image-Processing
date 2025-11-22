@@ -1,6 +1,7 @@
 # ---- Python ----
 __pycache__/
 *.py[cod]
+*.so
 *.pyd
 
 # Jupyter notebooks checkpoints
@@ -11,7 +12,8 @@ __pycache__/
 .idea/
 *.swp
 
-
+# Logs
+*.log
 
 # Environment files (optional)
 .env
@@ -22,8 +24,15 @@ __pycache__/
 *.temp
 *~
 
+# ---- Image Processing Outputs ----
+# Ignore generated images or results
+*.png
+*.jpg
+*.jpeg
+*.bmp
+*.tiff
+*.mp4
 
 # ---- OS Files ----
 .DS_Store
 Thumbs.db
-
