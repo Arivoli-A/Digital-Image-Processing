@@ -27,3 +27,7 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
+# Fog removal videos
+fog-removal/videos/*.mp4
+fog-removal/images/*.png
+fog-removal/processed_images/*.png
