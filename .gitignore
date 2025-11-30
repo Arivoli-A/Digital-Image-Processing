@@ -1,1 +1,33 @@
+# ---- Python ----
 __pycache__/
+*.py[cod]
+*.pyd
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# IDE settings
+.vscode/
+.idea/
+*.swp
+
+
+
+# Environment files (optional)
+.env
+*.env
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+
+# ---- OS Files ----
+.DS_Store
+Thumbs.db
+
+# Fog removal videos
+fog-removal/videos/*.mp4
+fog-removal/images/*.png
+fog-removal/processed_images/*.png
