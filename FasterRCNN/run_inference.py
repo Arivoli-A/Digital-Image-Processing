@@ -44,6 +44,12 @@ from tqdm import tqdm
 # Import custom dataset registration
 from register_custom_dataset import register_image_folder_dataset, get_dataset_info
 
+from detectron2.evaluation import COCOEvaluator, inference_on_dataset
+from detectron2.data import build_detection_test_loader
+from detectron2.engine import DefaultTrainer
+
+from register_custom_dataset import register_custom_coco_dataset
+
 VALID_EXTS = {".jpg", ".jpeg", ".png", ".bmp", ".tif", ".tiff"}
 
 
@@ -114,6 +120,25 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Don't draw confidence scores on detections.",
     )
+
+    parser.add_argument(
+        "--annotation",
+        default=None,
+        help="Annotation json file for dataset",
+    )
+    
+    parser.add_argument(
+        "--thing-classes",
+        nargs="+",
+        help="List of class names (optional, for metadata)",
+    )
+
+    parser.add_argument(
+    "--num-classes",
+    type=int,
+    default=80,
+    help="Number of object classes (excluding background)",
+    )
     return parser.parse_args()
 
 
@@ -142,7 +167,7 @@ def setup_config(
     weights: Optional[str],
     model: str,
     score_thresh: float,
-    device: str,
+    device: str, 
 ) -> tuple:
     """Set up Detectron2 configuration and predictor."""
     cfg = get_cfg()
@@ -169,7 +194,7 @@ def setup_config(
         # Use default pretrained weights from model zoo
         try:
             from detectron2 import model_zoo
-            weights_url = model_zoo.get_checkpoint_url(f"COCO-Detection/{model}.yaml")
+            weights_url = model_zoo.get_checkpoint_url(f"COCO-Detection/{model}.yaml") #  'https://dl.cv.ethz.ch/bdd100k/det/models/faster_rcnn_r50_fpn_3x_det_bdd100k.pth' 
             
             # Check if model is already cached locally
             from pathlib import Path
@@ -196,6 +221,9 @@ def setup_config(
     
     # Set score threshold
     cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = score_thresh
+
+    # Set number of classes
+    # cfg.MODEL.ROI_HEADS.NUM_CLASSES = num_classes
     
     # Set device
     cfg.MODEL.DEVICE = device
@@ -237,11 +265,27 @@ def run_inference() -> None:
     
     # Register custom dataset if needed (for metadata)
     dataset_name = f"custom_inference_{args.dataset}"
+    dataset_name_coco = f"custom_inference_{args.dataset}_coco"
+    
     try:
         # Try to register the image folder
-        register_image_folder_dataset(dataset_name, str(image_dir))
+        register_image_folder_dataset(dataset_name, str(image_dir)) #, thing_classes = args.thing_classes)
         dataset_info = get_dataset_info(dataset_name)
         print(f"Registered dataset '{dataset_name}' with {dataset_info['num_images']} images")
+
+        # Only register COCO if annotation is provided
+        if args.annotation:
+            register_custom_coco_dataset(
+                name=dataset_name_coco,
+                json_file=args.annotation,
+                image_root=image_dir,
+                thing_classes=args.thing_classes
+            )
+            print(f"Registered annotation dataset '{dataset_name_coco}'")
+        else:
+            dataset_name_coco = None
+            print("No annotation provided -> Evaluation metrics disabled.")
+            
     except Exception as e:
         print(f"Warning: Could not register custom dataset: {e}")
         print("Using default COCO metadata")
@@ -277,7 +321,7 @@ def run_inference() -> None:
     print(f"\nRunning inference on {len(image_files)} images...")
     print(f"Score threshold: {args.score_thresh}")
     print(f"Output directory: {output_dir}")
-    
+
     # Run inference
     with torch.no_grad():
         for image_path in tqdm(image_files, desc="Processing images", unit="img"):
@@ -327,8 +371,98 @@ def run_inference() -> None:
                 print(f"\n{image_path.name}: {num_detections} detections")
                 for cls_name, score in zip(class_names, scores):
                     print(f"  - {cls_name}: {score:.2f}")
-    
+
+            if args.annotation:
+                from pycocotools.coco import COCO
+                coco = COCO(args.annotation)
+                
+                img_id = None
+                if image_path.stem.isdigit():
+                    img_ids_list = coco.getImgIds(imgIds=[int(image_path.stem)])
+                    if len(img_ids_list) > 0:
+                        img_id = img_ids_list[0]
+                
+                if img_id is not None:
+                    gt_image = image.copy()
+                    ann_ids = coco.getAnnIds(imgIds=[img_id])
+                    anns = coco.loadAnns(ann_ids)
+                    for ann in anns:
+                        x, y, w, h = map(int, ann['bbox'])
+                        cv2.rectangle(gt_image, (x, y), (x+w, y+h), (0, 255, 0), 2)
+                        class_name = coco.loadCats(ann['category_id'])[0]['name']
+                        cv2.putText(gt_image, class_name, (x, y-5),
+                                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1)
+                    
+                    # Resize vis_image to have the same height as gt_image
+                    if gt_image.shape[0] != vis_image.shape[0]:
+                        new_width = int(vis_image.shape[1] * (gt_image.shape[0] / vis_image.shape[0]))
+                        vis_image = cv2.resize(vis_image, (new_width, gt_image.shape[0]))
+                    
+                    combined = np.concatenate([gt_image, vis_image], axis=1)
+                    
+                    combined_output_path = output_dir / f"{image_path.stem}_gt_pred.{args.save_format}"
+                    print("Saving combined GT & Pred image at", combined_output_path)
+                    cv2.imwrite(str(combined_output_path), combined)
+
     print(f"\nInference complete! Results saved to {output_dir}")
+
+
+    #  EVALUATION METRICS (ONLY IF ANNOTATION EXISTS)
+   
+    if dataset_name_coco is not None:
+        print("\nRunning evaluation on dataset with annotation...")
+        evaluator = COCOEvaluator(dataset_name_coco, cfg, False, output_dir=str(output_dir))
+        val_loader = build_detection_test_loader(cfg, dataset_name_coco)
+        
+        #  cfg.MODEL.ROI_HEADS.NUM_CLASSES = 80 #len(args.thing_classes)
+
+        # meta = MetadataCatalog.get(dataset_name_coco)
+        
+        # from pycocotools.coco import COCO
+        
+        # coco = COCO(args.annotation)
+        # cats = coco.loadCats(coco.getCatIds())
+        # cat_ids = [c['id'] for c in sorted(cats, key=lambda x: x['id'])]  # JSON IDs in order
+        # names = [c['name'] for c in sorted(cats, key=lambda x: x['id'])]
+        
+        # meta.thing_classes = names
+        # meta.thing_dataset_id_to_contiguous_id = {k: i for i, k in enumerate(cat_ids)}
+        
+        # model = DefaultTrainer.build_model(cfg) 
+
+        model = predictor.model
+        model.eval()
+
+        
+        # for batch in val_loader:
+        #     outputs = model(batch)
+        #     print(batch)          # GT annotations
+        #     print(outputs)        # Model predictions
+    
+      
+        # print("Evaluator contiguous class order (0-based):")
+        # for i, name in enumerate(meta.thing_classes):
+        #     print(i, "→", name)
+
+        import sys
+        from contextlib import redirect_stdout
+        
+        
+        output_file = Path(args.output_dir) / "detection_metrics_full.txt"
+        
+        with open(output_file, "w") as f:
+            with redirect_stdout(f):
+                results = inference_on_dataset(model, val_loader, evaluator)
+        
+                # results = inference_on_dataset(model, val_loader, evaluator)
+            
+                print("\n===== DETECTION METRICS =====")
+                print(results)
+        print(f"Full detection metrics saved to {output_file}")
+
+
+    else:
+        print("\nNo annotation provided: skipping evaluation metrics.")
 
 
 if __name__ == "__main__":

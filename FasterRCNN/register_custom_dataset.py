@@ -30,9 +30,10 @@ def register_custom_coco_dataset(
     register_coco_instances(name, {}, json_file, image_root)
     
     # Set metadata if classes provided
-    if thing_classes:
-        MetadataCatalog.get(name).thing_classes = thing_classes
+    # if thing_classes:
+    #     MetadataCatalog.get(name).thing_classes = thing_classes
 
+    meta = MetadataCatalog.get(name)
 
 def register_image_folder_dataset(
     name: str,

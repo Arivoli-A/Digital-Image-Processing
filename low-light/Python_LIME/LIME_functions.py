@@ -9,87 +9,130 @@ from matplotlib import pyplot as plt
 from bm3d import bm3d
 from typing import Union
 
-def d_sparse_matrices(illumination_map: np.ndarray) -> csr_matrix:
-    """Generates Toeplitz matrices of the compatible shape with the given 
-    ''illumination_map''
-    for computation of a forward difference in both horizontal and vertical 
-    directions.
+# def d_sparse_matrices(illumination_map: np.ndarray) -> csr_matrix:
+#     """Generates Toeplitz matrices of the compatible shape with the given 
+#     ''illumination_map''
+#     for computation of a forward difference in both horizontal and vertical 
+#     directions.
 
-    Returns the shape-(M*N, M*N) arrays of Toeplitz matrices in a compressed 
-    sparse row format.
+#     Returns the shape-(M*N, M*N) arrays of Toeplitz matrices in a compressed 
+#     sparse row format.
 
-    ## Args:
-        illumination_map (numpy.ndarray) : A shape-(M, N) array of maximum 
-        intensity values.
+#     ## Args:
+#         illumination_map (numpy.ndarray) : A shape-(M, N) array of maximum 
+#         intensity values.
 
-    ## Returns:
-        d_x_sparse (scipy.sparse.csr_matrix) : A shape-(M*N, M*N) compressed 
-        sparse row matrix for calculation of a forward difference 
-        in a horizontal direction.
+#     ## Returns:
+#         d_x_sparse (scipy.sparse.csr_matrix) : A shape-(M*N, M*N) compressed 
+#         sparse row matrix for calculation of a forward difference 
+#         in a horizontal direction.
 
-        d_y_sparse (scipy.sparse.csr_matrix) : A shape-(M*N, M*N) compressed 
-        sparse row matrix for calculation of a forward difference 
-        in a vertical direction.
-    """
+#         d_y_sparse (scipy.sparse.csr_matrix) : A shape-(M*N, M*N) compressed 
+#         sparse row matrix for calculation of a forward difference 
+#         in a vertical direction.
+#     """
 
-    image_x_shape = illumination_map.shape[-1]
-    image_size = illumination_map.size
-    dx_row, dx_col, dx_value = [], [], []
-    dy_row, dy_col, dy_value = [], [], []
-    # Produces lists of non-zero values and their row and column indeces
-    for i in range(image_size - 1):
-        if image_x_shape + i < image_size:
-            dy_row += [i, i]
-            dy_col += [i, image_x_shape + i]
-            dy_value += [-1, 1]
-        if (i+1) % image_x_shape != 0 or i == 0:
-            dx_row += [i, i]
-            dx_col += [i, i+1]
-            dx_value += [-1, 1]
-    # Creates compressed sparse row matrices of a required shape
-    # based on provided values and their indeces
-    d_x_sparse = csr_matrix((dx_value, (dx_row, dx_col)), 
-                            shape = (image_size, image_size))
-    d_y_sparse = csr_matrix((dy_value, (dy_row, dy_col)), 
-                            shape = (image_size, image_size))
+#     image_x_shape = illumination_map.shape[-1]
+#     image_size = illumination_map.size
+#     dx_row, dx_col, dx_value = [], [], []
+#     dy_row, dy_col, dy_value = [], [], []
+#     # Produces lists of non-zero values and their row and column indeces
+#     for i in range(image_size - 1):
+#         if image_x_shape + i < image_size:
+#             dy_row += [i, i]
+#             dy_col += [i, image_x_shape + i]
+#             dy_value += [-1, 1]
+#         if (i+1) % image_x_shape != 0 or i == 0:
+#             dx_row += [i, i]
+#             dx_col += [i, i+1]
+#             dx_value += [-1, 1]
+#     # Creates compressed sparse row matrices of a required shape
+#     # based on provided values and their indeces
+#     d_x_sparse = csr_matrix((dx_value, (dx_row, dx_col)), 
+#                             shape = (image_size, image_size))
+#     d_y_sparse = csr_matrix((dy_value, (dy_row, dy_col)), 
+#                             shape = (image_size, image_size))
+
+#     return d_x_sparse, d_y_sparse
+
+def d_sparse_matrices(illumination_map: np.ndarray):
+    M, N = illumination_map.shape
+    size = M * N
+
+    # Horizontal forward difference
+    dx = np.ones(size)
+    dx[-1] = 0  # last element has no forward neighbor
+    offsets_x = [0, 1]
+    data_x = np.array([-dx, dx])
+    # Mask to avoid wrap-around at row ends
+    mask = np.ones(size, dtype=bool)
+    mask[np.arange(1, size+1) % N == 0] = False
+    data_x[1] = data_x[1] * mask
+    d_x_sparse = diags(data_x, offsets_x, shape=(size, size), format='csr')
+
+    # Vertical forward difference
+    dy = np.ones(size - N)
+    offsets_y = [0, N]
+    data_y = np.array([-np.concatenate([dy, [0]*N]), np.concatenate([dy, [0]*N])])
+    d_y_sparse = diags(data_y, offsets_y, shape=(size, size), format='csr')
 
     return d_x_sparse, d_y_sparse
 
 
-def partial_derivative_vectorized(
-        input_matrix: np.ndarray,
-        toeplitz_sparse_matrix: csr_matrix
-        ) -> np.ndarray:
-    """Calculates a partial derivative of an ''input_matrix'' with a given 
-    ''toeplitz_sparse_matrix''.
 
-    Returns the shape-(M, N) array of derivative values.
+# def partial_derivative_vectorized(
+#         input_matrix: np.ndarray,
+#         toeplitz_sparse_matrix: csr_matrix
+#         ) -> np.ndarray:
+#     """Calculates a partial derivative of an ''input_matrix'' with a given 
+#     ''toeplitz_sparse_matrix''.
 
-    ## Args:
-        input_matrix (numpy.ndarray) : A shape-(M, N) array.
+#     Returns the shape-(M, N) array of derivative values.
 
-        toeplitz_sparse_matrix (scipy.sparse.csr_matrix) : A shape-(M*N, M*N) 
-        compressed sparse row matrix for calculation of a difference 
-        in a specified direction.
+#     ## Args:
+#         input_matrix (numpy.ndarray) : A shape-(M, N) array.
 
-    ## Returns:
-        p_derivative (numpy.ndarray) : A shape-(M, N) array of derivative 
-        values.
+#         toeplitz_sparse_matrix (scipy.sparse.csr_matrix) : A shape-(M*N, M*N) 
+#         compressed sparse row matrix for calculation of a difference 
+#         in a specified direction.
+
+#     ## Returns:
+#         p_derivative (numpy.ndarray) : A shape-(M, N) array of derivative 
+#         values.
+#     """
+
+#     input_size = input_matrix.size
+#     output_shape = input_matrix.shape
+#     # Vectorizes the input matrix producing a shape-(M*N, 1) vector
+#     vectorized_matrix = input_matrix.reshape((input_size, 1))
+#     # Calculates values of partial derivatives with multiplication of the 
+#     # vectorized matrix by the specific Toeplitz matrix in a compressed
+#     # sparse row format
+#     matrices_product = toeplitz_sparse_matrix * vectorized_matrix
+#     # Reverts vectorized matrix of partial derivatives to a shape
+#     # of the input matrix
+#     p_derivative = matrices_product.reshape(output_shape)
+
+#     return p_derivative
+
+
+
+def partial_derivative_vectorized(input_matrix: np.ndarray, direction: str) -> np.ndarray:
     """
+    Computes horizontal ('x') or vertical ('y') forward differences.
+    """
+    if direction == 'x':
+        # Forward difference in x (columns)
+        grad = np.roll(input_matrix, -1, axis=1) - input_matrix
+        grad[:, -1] = 0  # last column has no forward neighbor
+    elif direction == 'y':
+        # Forward difference in y (rows)
+        grad = np.roll(input_matrix, -1, axis=0) - input_matrix
+        grad[-1, :] = 0  # last row has no forward neighbor
+    else:
+        raise ValueError("Direction must be 'x' or 'y'.")
 
-    input_size = input_matrix.size
-    output_shape = input_matrix.shape
-    # Vectorizes the input matrix producing a shape-(M*N, 1) vector
-    vectorized_matrix = input_matrix.reshape((input_size, 1))
-    # Calculates values of partial derivatives with multiplication of the 
-    # vectorized matrix by the specific Toeplitz matrix in a compressed
-    # sparse row format
-    matrices_product = toeplitz_sparse_matrix * vectorized_matrix
-    # Reverts vectorized matrix of partial derivatives to a shape
-    # of the input matrix
-    p_derivative = matrices_product.reshape(output_shape)
-
-    return p_derivative
+    return grad
 
 
 def gaussian_weight(
@@ -164,8 +207,8 @@ def initialize_weights(
     elif strategy_n == 2:
         print('Weight generation strategy: 2')
         d_x, d_y = d_sparse_matrices(ill_map)
-        grad_t_x = partial_derivative_vectorized(ill_map, d_x)
-        grad_t_y = partial_derivative_vectorized(ill_map, d_y)
+        grad_t_x = partial_derivative_vectorized(ill_map, 'x') #partial_derivative_vectorized(ill_map, d_x)
+        grad_t_y = partial_derivative_vectorized(ill_map, 'y')# partial_derivative_vectorized(ill_map, d_y)
         weights_x = 1 / (np.abs(grad_t_x) + epsilon)
         weights_y = 1 / (np.abs(grad_t_y) + epsilon)
     else:
@@ -174,8 +217,8 @@ def initialize_weights(
         print('Weight generation strategy: 3')
         print(f'Strategy parameters: sigma = {sigma}, kernel size = {size}')
         d_x, d_y = d_sparse_matrices(ill_map)
-        grad_t_x = partial_derivative_vectorized(ill_map, d_x)
-        grad_t_y = partial_derivative_vectorized(ill_map, d_y)
+        grad_t_x = partial_derivative_vectorized(ill_map, 'x') #partial_derivative_vectorized(ill_map, d_x)
+        grad_t_y = partial_derivative_vectorized(ill_map, 'y') #partial_derivative_vectorized(ill_map, d_y)
         weights_x = gaussian_weight(grad_t_x, size, sigma, epsilon)
         weights_y = gaussian_weight(grad_t_y, size, sigma, epsilon)
     # Modifies and transforms weight matrices in a vector form
@@ -310,35 +353,54 @@ def is_image(file_name: str) -> bool:
     return bool_value
 
 
-def loss_calculation(
-        reference_image: np.ndarray,
-        refined_image: np.ndarray
-        ) -> float:
-    """Calculates the lightness order error (LOE) metric comparing pixel 
-    intensities of a refined image with their reference counterparts.
+# def loss_calculation(
+#         reference_image: np.ndarray,
+#         refined_image: np.ndarray
+#         ) -> float:
+#     """Calculates the lightness order error (LOE) metric comparing pixel 
+#     intensities of a refined image with their reference counterparts.
 
-    Returns a calculated value of the LOE metric.
+#     Returns a calculated value of the LOE metric.
 
-    ## Args:
-        reference_image (numpy.ndarray) : A shape-(3, M, N) reference image 
-        which is considered as ground truth.
+#     ## Args:
+#         reference_image (numpy.ndarray) : A shape-(3, M, N) reference image 
+#         which is considered as ground truth.
 
-        refined_image (numpy.ndarray) : A shape-(3, M, N) refined image.
+#         refined_image (numpy.ndarray) : A shape-(3, M, N) refined image.
 
-    ## Returns:
-        (float) : A calculated value of the LOE metric.
+#     ## Returns:
+#         (float) : A calculated value of the LOE metric.
+#     """
+
+#     v_shape, h_shape = reference_image.shape
+#     n_pixels = reference_image.size
+#     loss = 0
+
+#     for v_pixel in range(v_shape-1):
+#         for h_pixel in range(h_shape-1):
+#             bool_term_ini = reference_image <= \
+#                   reference_image[v_pixel, h_pixel]
+#             bool_term_ref = refined_image <= refined_image[v_pixel, h_pixel]
+#             xor_term = np.logical_xor(bool_term_ini, bool_term_ref)
+#             loss += np.sum(xor_term)
+
+#     return loss / (n_pixels * 1000)
+
+
+def loss_calculation(reference_image: np.ndarray, refined_image: np.ndarray) -> float:
     """
-
-    v_shape, h_shape = reference_image.shape
-    n_pixels = reference_image.size
-    loss = 0
-
-    for v_pixel in range(v_shape-1):
-        for h_pixel in range(h_shape-1):
-            bool_term_ini = reference_image <= \
-                  reference_image[v_pixel, h_pixel]
-            bool_term_ref = refined_image <= refined_image[v_pixel, h_pixel]
-            xor_term = np.logical_xor(bool_term_ini, bool_term_ref)
-            loss += np.sum(xor_term)
-
-    return loss / (n_pixels * 1000)
+    Computes Lightness Order Error (LOE) using fully vectorized operations.
+    """
+    # Flatten images for easier broadcasting
+    ref_flat = reference_image.flatten()
+    refd_flat = refined_image.flatten()
+    
+    # Compare each pixel with all others
+    ref_order = ref_flat[:, None] >= ref_flat[None, :]
+    refd_order = refd_flat[:, None] >= refd_flat[None, :]
+    
+    # XOR and sum
+    xor_matrix = np.logical_xor(ref_order, refd_order)
+    loss = xor_matrix.sum() / (ref_flat.size * ref_flat.size * 1000)
+    
+    return loss

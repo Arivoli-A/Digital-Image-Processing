@@ -21,7 +21,8 @@ echo "---------------------------------------------"
 echo " Installing compilers (GCC/G++) from conda-forge"
 echo "---------------------------------------------"
 
-conda install -y -c conda-forge compilers
+conda install -y -c conda-forge compilers=2 gcc_linux-64=12 gxx_linux-64=12 libgcc-devel_linux-64=12
+
 
 echo "---------------------------------------------"
 echo " Installing OpenCV from conda-forge"
@@ -44,7 +45,10 @@ conda install -y -c conda-forge \
     matplotlib
 
 pip install \
-    bm3d
+    bm3d \
+    pyiqa \
+    fiftyone \
+    ultralytics
 echo "---------------------------------------------"
 echo " Registering Jupyter kernel: $ENV_NAME"
 echo "---------------------------------------------"
