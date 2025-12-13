@@ -5,6 +5,7 @@ __pycache__/
 
 # Jupyter notebooks checkpoints
 .ipynb_checkpoints/
+ece253/
 
 # IDE settings
 .vscode/
