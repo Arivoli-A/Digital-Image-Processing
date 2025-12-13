@@ -1,0 +1,575 @@
+{
+  "low_light_unprocessed": {
+    "description": "Low Light - Unprocessed Images",
+    "input_images_directory": "./low-light/ground_truth/test",
+    "annotations_file": "./low-light/ground_truth/test/instances_default_test_bdd100k.json",
+    "output_images_directory": "./low-light/outputs/ground_truth/",
+    "num_images": 49,
+    "num_predictions": 794,
+    "num_visualizations": 45,
+    "metrics": {
+      "AP": {
+        "per_class": {
+          "pedestrian": 0.0,
+          "rider": 5.544554455445542,
+          "car": 28.102322340328257,
+          "truck": 36.86185761433286,
+          "bus": 0.0,
+          "train": 0.0,
+          "motorcycle": 0.0,
+          "bicycle": 49.99999999999999,
+          "traffic light": 10.809759547383308,
+          "traffic sign": 42.586876334692285
+        },
+        "overall": 17.390537029218226
+      },
+      "AP50": {
+        "per_class": {
+          "pedestrian": 0.0,
+          "rider": 6.930693069306929,
+          "car": 52.466768593207156,
+          "truck": 51.636020744931635,
+          "bus": 0.0,
+          "train": 0.0,
+          "motorcycle": 0.0,
+          "bicycle": 99.99999999999999,
+          "traffic light": 56.61244695898161,
+          "traffic sign": 55.659095321296824
+        },
+        "overall": 32.330502468772416
+      },
+      "AP75": {
+        "per_class": {
+          "pedestrian": 0.0,
+          "rider": 6.930693069306929,
+          "car": 28.801627274299207,
+          "truck": 33.13531353135314,
+          "bus": 0.0,
+          "train": 0.0,
+          "motorcycle": 0.0,
+          "bicycle": 0.0,
+          "traffic light": 0.0,
+          "traffic sign": 55.659095321296824
+        },
+        "overall": 12.45267291962561
+      },
+      "APs": {
+        "per_class": {
+          "pedestrian": 0.0,
+          "rider": 0.0,
+          "car": 33.93250160929405,
+          "truck": 0.0,
+          "bus": 0.0,
+          "train": 0.0,
+          "motorcycle": 0.0,
+          "bicycle": 0.0,
+          "traffic light": 10.809759547383308,
+          "traffic sign": 34.9047981721249
+        },
+        "overall": 7.964705932880226
+      },
+      "APm": {
+        "per_class": {
+          "pedestrian": 0.0,
+          "rider": 13.465346534653461,
+          "car": 23.632332072965518,
+          "truck": 50.0,
+          "bus": 0.0,
+          "train": 0.0,
+          "motorcycle": 0.0,
+          "bicycle": 49.99999999999999,
+          "traffic light": 0.0,
+          "traffic sign": 58.61386138613861
+        },
+        "overall": 19.57115399937576
+      },
+      "APl": {
+        "per_class": {
+          "pedestrian": 0.0,
+          "rider": 0.0,
+          "car": 37.01359384148577,
+          "truck": 38.66529510093866,
+          "bus": 0.0,
+          "train": 0.0,
+          "motorcycle": 0.0,
+          "bicycle": 0.0,
+          "traffic light": 0.0,
+          "traffic sign": 0.0
+        },
+        "overall": 7.567888894242444
+      },
+      "AR1": {
+        "per_class": {
+          "pedestrian": 0.0,
+          "rider": 5.0,
+          "car": 14.622641509433961,
+          "truck": 41.25,
+          "bus": 0.0,
+          "train": 0.0,
+          "motorcycle": 0.0,
+          "bicycle": 50.0,
+          "traffic light": 18.0,
+          "traffic sign": 52.22222222222223
+        },
+        "overall": 18.109486373165616
+      },
+      "AR10": {
+        "per_class": {
+          "pedestrian": 0.0,
+          "rider": 5.0,
+          "car": 40.94339622641511,
+          "truck": 52.5,
+          "bus": 0.0,
+          "train": 0.0,
+          "motorcycle": 0.0,
+          "bicycle": 50.0,
+          "traffic light": 18.0,
+          "traffic sign": 52.22222222222223
+        },
+        "overall": 21.866561844863732
+      },
+      "AR100": {
+        "per_class": {
+          "pedestrian": 0.0,
+          "rider": 5.0,
+          "car": 45.0,
+          "truck": 52.5,
+          "bus": 0.0,
+          "train": 0.0,
+          "motorcycle": 0.0,
+          "bicycle": 50.0,
+          "traffic light": 18.0,
+          "traffic sign": 52.22222222222223
+        },
+        "overall": 22.272222222222222
+      },
+      "ARs": {
+        "per_class": {
+          "pedestrian": 0.0,
+          "rider": 0.0,
+          "car": 46.25,
+          "truck": 0.0,
+          "bus": 0.0,
+          "train": 0.0,
+          "motorcycle": 0.0,
+          "bicycle": 0.0,
+          "traffic light": 18.0,
+          "traffic sign": 48.33333333333333
+        },
+        "overall": 11.258333333333333
+      },
+      "ARm": {
+        "per_class": {
+          "pedestrian": 0.0,
+          "rider": 13.333333333333334,
+          "car": 45.08474576271186,
+          "truck": 49.999999999999986,
+          "bus": 0.0,
+          "train": 0.0,
+          "motorcycle": 0.0,
+          "bicycle": 50.0,
+          "traffic light": 0.0,
+          "traffic sign": 60.0
+        },
+        "overall": 21.84180790960452
+      },
+      "ARl": {
+        "per_class": {
+          "pedestrian": 0.0,
+          "rider": 0.0,
+          "car": 44.61538461538462,
+          "truck": 67.5,
+          "bus": 0.0,
+          "train": 0.0,
+          "motorcycle": 0.0,
+          "bicycle": 0.0,
+          "traffic light": 0.0,
+          "traffic sign": 0.0
+        },
+        "overall": 11.211538461538462
+      }
+    }
+  },
+  "low_light_bimef": {
+    "description": "BIMEF",
+    "input_images_directory": "./low-light/BIMEF/",
+    "annotations_file": "./low-light/BIMEF/instances_default_processed_bdd100k.json",
+    "output_images_directory": "./low-light/outputs/BIMEF",
+    "num_images": 49,
+    "num_predictions": 665,
+    "num_visualizations": 47,
+    "metrics": {
+      "AP": {
+        "per_class": {
+          "pedestrian": 0.0,
+          "rider": 7.128712871287128,
+          "car": 23.149548962159262,
+          "truck": 27.006854531607004,
+          "bus": 0.0,
+          "train": 0.0,
+          "motorcycle": 0.0,
+          "bicycle": 59.999999999999986,
+          "traffic light": 18.97689768976898,
+          "traffic sign": 51.06789250353606
+        },
+        "overall": 18.73299065583584
+      },
+      "AP50": {
+        "per_class": {
+          "pedestrian": 0.0,
+          "rider": 18.81188118811881,
+          "car": 42.80757832711827,
+          "truck": 35.64356435643564,
+          "bus": 0.0,
+          "train": 0.0,
+          "motorcycle": 0.0,
+          "bicycle": 99.99999999999999,
+          "traffic light": 60.396039603960396,
+          "traffic sign": 63.22489391796322
+        },
+        "overall": 32.08839573935963
+      },
+      "AP75": {
+        "per_class": {
+          "pedestrian": 0.0,
+          "rider": 6.930693069306929,
+          "car": 22.136320781282524,
+          "truck": 25.742574257425744,
+          "bus": 0.0,
+          "train": 0.0,
+          "motorcycle": 0.0,
+          "bicycle": 99.99999999999999,
+          "traffic light": 0.0,
+          "traffic sign": 63.22489391796322
+        },
+        "overall": 21.803448202597842
+      },
+      "APs": {
+        "per_class": {
+          "pedestrian": 0.0,
+          "rider": 2.623762376237624,
+          "car": 27.451202263083452,
+          "truck": 0.0,
+          "bus": 0.0,
+          "train": 0.0,
+          "motorcycle": 0.0,
+          "bicycle": 0.0,
+          "traffic light": 18.97689768976898,
+          "traffic sign": 37.02970297029703
+        },
+        "overall": 8.608156529938707
+      },
+      "APm": {
+        "per_class": {
+          "pedestrian": 0.0,
+          "rider": 13.465346534653461,
+          "car": 19.6095257458441,
+          "truck": 33.66336633663366,
+          "bus": 0.0,
+          "train": 0.0,
+          "motorcycle": 0.0,
+          "bicycle": 59.999999999999986,
+          "traffic light": 0.0,
+          "traffic sign": 90.0
+        },
+        "overall": 21.67382386171312
+      },
+      "APl": {
+        "per_class": {
+          "pedestrian": 0.0,
+          "rider": 0.0,
+          "car": 31.5580778785211,
+          "truck": 28.107810781078097,
+          "bus": 0.0,
+          "train": 0.0,
+          "motorcycle": 0.0,
+          "bicycle": 0.0,
+          "traffic light": 0.0,
+          "traffic sign": 0.0
+        },
+        "overall": 5.9665888659599196
+      },
+      "AR1": {
+        "per_class": {
+          "pedestrian": 0.0,
+          "rider": 6.875000000000001,
+          "car": 16.226415094339625,
+          "truck": 28.749999999999996,
+          "bus": 0.0,
+          "train": 0.0,
+          "motorcycle": 0.0,
+          "bicycle": 60.0,
+          "traffic light": 24.000000000000004,
+          "traffic sign": 56.666666666666664
+        },
+        "overall": 19.251808176100628
+      },
+      "AR10": {
+        "per_class": {
+          "pedestrian": 0.0,
+          "rider": 6.875000000000001,
+          "car": 36.60377358490566,
+          "truck": 28.749999999999996,
+          "bus": 0.0,
+          "train": 0.0,
+          "motorcycle": 0.0,
+          "bicycle": 60.0,
+          "traffic light": 24.000000000000004,
+          "traffic sign": 56.666666666666664
+        },
+        "overall": 21.28954402515723
+      },
+      "AR100": {
+        "per_class": {
+          "pedestrian": 0.0,
+          "rider": 6.875000000000001,
+          "car": 38.39622641509434,
+          "truck": 28.749999999999996,
+          "bus": 0.0,
+          "train": 0.0,
+          "motorcycle": 0.0,
+          "bicycle": 60.0,
+          "traffic light": 24.000000000000004,
+          "traffic sign": 56.666666666666664
+        },
+        "overall": 21.4687893081761
+      },
+      "ARs": {
+        "per_class": {
+          "pedestrian": 0.0,
+          "rider": 3.0000000000000004,
+          "car": 36.25,
+          "truck": 0.0,
+          "bus": 0.0,
+          "train": 0.0,
+          "motorcycle": 0.0,
+          "bicycle": 0.0,
+          "traffic light": 24.000000000000004,
+          "traffic sign": 40.0
+        },
+        "overall": 10.325
+      },
+      "ARm": {
+        "per_class": {
+          "pedestrian": 0.0,
+          "rider": 13.333333333333334,
+          "car": 39.152542372881356,
+          "truck": 33.333333333333336,
+          "bus": 0.0,
+          "train": 0.0,
+          "motorcycle": 0.0,
+          "bicycle": 60.0,
+          "traffic light": 0.0,
+          "traffic sign": 90.0
+        },
+        "overall": 23.581920903954803
+      },
+      "ARl": {
+        "per_class": {
+          "pedestrian": 0.0,
+          "rider": 0.0,
+          "car": 37.692307692307686,
+          "truck": 32.5,
+          "bus": 0.0,
+          "train": 0.0,
+          "motorcycle": 0.0,
+          "bicycle": 0.0,
+          "traffic light": 0.0,
+          "traffic sign": 0.0
+        },
+        "overall": 7.019230769230768
+      }
+    }
+  },
+  "low_light_lime": {
+    "description": "LIME",
+    "input_images_directory": "./low-light/LIME",
+    "annotations_file": "./low-light/BIMEF/instances_default_processed_bdd100k.json",
+    "output_images_directory": "./low-light/outputs/LIME",
+    "num_images": 49,
+    "num_predictions": 668,
+    "num_visualizations": 47,
+    "metrics": {
+      "AP": {
+        "per_class": {
+          "pedestrian": 0.0,
+          "rider": 5.544554455445542,
+          "car": 24.97274477540745,
+          "truck": 32.694622403416815,
+          "bus": 0.0,
+          "train": 0.0,
+          "motorcycle": 0.0,
+          "bicycle": 89.99999999999999,
+          "traffic light": 4.9504950495049505,
+          "traffic sign": 53.399339933993396
+        },
+        "overall": 21.156175661776814
+      },
+      "AP50": {
+        "per_class": {
+          "pedestrian": 0.0,
+          "rider": 6.930693069306929,
+          "car": 44.08449155907535,
+          "truck": 51.970491166763736,
+          "bus": 0.0,
+          "train": 0.0,
+          "motorcycle": 0.0,
+          "bicycle": 99.99999999999999,
+          "traffic light": 28.712871287128706,
+          "traffic sign": 66.33663366336634
+        },
+        "overall": 29.803518074564103
+      },
+      "AP75": {
+        "per_class": {
+          "pedestrian": 0.0,
+          "rider": 6.930693069306929,
+          "car": 27.247840610280683,
+          "truck": 27.83925451368666,
+          "bus": 0.0,
+          "train": 0.0,
+          "motorcycle": 0.0,
+          "bicycle": 99.99999999999999,
+          "traffic light": 0.0,
+          "traffic sign": 66.33663366336634
+        },
+        "overall": 22.83544218566406
+      },
+      "APs": {
+        "per_class": {
+          "pedestrian": 0.0,
+          "rider": 0.0,
+          "car": 32.584711779448625,
+          "truck": 0.0,
+          "bus": 0.0,
+          "train": 0.0,
+          "motorcycle": 0.0,
+          "bicycle": 0.0,
+          "traffic light": 4.9504950495049505,
+          "traffic sign": 39.273927392739274
+        },
+        "overall": 7.680913422169286
+      },
+      "APm": {
+        "per_class": {
+          "pedestrian": 0.0,
+          "rider": 13.465346534653461,
+          "car": 22.041846285774756,
+          "truck": 33.56435643564357,
+          "bus": 0.0,
+          "train": 0.0,
+          "motorcycle": 0.0,
+          "bicycle": 89.99999999999999,
+          "traffic light": 0.0,
+          "traffic sign": 83.36633663366337
+        },
+        "overall": 24.243788588973512
+      },
+      "APl": {
+        "per_class": {
+          "pedestrian": 0.0,
+          "rider": 0.0,
+          "car": 31.472470762153776,
+          "truck": 38.699089689188696,
+          "bus": 0.0,
+          "train": 0.0,
+          "motorcycle": 0.0,
+          "bicycle": 0.0,
+          "traffic light": 0.0,
+          "traffic sign": 0.0
+        },
+        "overall": 7.017156045134247
+      },
+      "AR1": {
+        "per_class": {
+          "pedestrian": 0.0,
+          "rider": 5.0,
+          "car": 14.905660377358492,
+          "truck": 31.25,
+          "bus": 0.0,
+          "train": 0.0,
+          "motorcycle": 0.0,
+          "bicycle": 90.0,
+          "traffic light": 6.000000000000001,
+          "traffic sign": 56.666666666666664
+        },
+        "overall": 20.382232704402515
+      },
+      "AR10": {
+        "per_class": {
+          "pedestrian": 0.0,
+          "rider": 5.0,
+          "car": 34.339622641509436,
+          "truck": 46.25,
+          "bus": 0.0,
+          "train": 0.0,
+          "motorcycle": 0.0,
+          "bicycle": 90.0,
+          "traffic light": 6.000000000000001,
+          "traffic sign": 56.666666666666664
+        },
+        "overall": 23.825628930817608
+      },
+      "AR100": {
+        "per_class": {
+          "pedestrian": 0.0,
+          "rider": 5.0,
+          "car": 38.49056603773585,
+          "truck": 46.25,
+          "bus": 0.0,
+          "train": 0.0,
+          "motorcycle": 0.0,
+          "bicycle": 90.0,
+          "traffic light": 6.000000000000001,
+          "traffic sign": 56.666666666666664
+        },
+        "overall": 24.24072327044025
+      },
+      "ARs": {
+        "per_class": {
+          "pedestrian": 0.0,
+          "rider": 0.0,
+          "car": 45.0,
+          "truck": 0.0,
+          "bus": 0.0,
+          "train": 0.0,
+          "motorcycle": 0.0,
+          "bicycle": 0.0,
+          "traffic light": 6.000000000000001,
+          "traffic sign": 43.33333333333333
+        },
+        "overall": 9.433333333333334
+      },
+      "ARm": {
+        "per_class": {
+          "pedestrian": 0.0,
+          "rider": 13.333333333333334,
+          "car": 36.271186440677965,
+          "truck": 36.666666666666664,
+          "bus": 0.0,
+          "train": 0.0,
+          "motorcycle": 0.0,
+          "bicycle": 90.0,
+          "traffic light": 0.0,
+          "traffic sign": 83.33333333333334
+        },
+        "overall": 25.960451977401135
+      },
+      "ARl": {
+        "per_class": {
+          "pedestrian": 0.0,
+          "rider": 0.0,
+          "car": 40.51282051282051,
+          "truck": 65.0,
+          "bus": 0.0,
+          "train": 0.0,
+          "motorcycle": 0.0,
+          "bicycle": 0.0,
+          "traffic light": 0.0,
+          "traffic sign": 0.0
+        },
+        "overall": 10.551282051282051
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "folder_id": "low_light_unprocessed",
+    "description": "Low Light - Unprocessed Images",
+    "num_images": 49,
+    "num_predictions": 794,
+    "num_visualizations": 45,
+    "AP": 17.390537029218226,
+    "AP50": 32.330502468772416,
+    "AP75": 12.45267291962561,
+    "AR1": 18.109486373165616,
+    "AR10": 21.866561844863732,
+    "AR100": 22.272222222222222
+  },
+  {
+    "folder_id": "low_light_bimef",
+    "description": "BIMEF",
+    "num_images": 49,
+    "num_predictions": 665,
+    "num_visualizations": 47,
+    "AP": 18.73299065583584,
+    "AP50": 32.08839573935963,
+    "AP75": 21.803448202597842,
+    "AR1": 19.251808176100628,
+    "AR10": 21.28954402515723,
+    "AR100": 21.4687893081761
+  },
+  {
+    "folder_id": "low_light_lime",
+    "description": "LIME",
+    "num_images": 49,
+    "num_predictions": 668,
+    "num_visualizations": 47,
+    "AP": 21.156175661776814,
+    "AP50": 29.803518074564103,
+    "AP75": 22.83544218566406,
+    "AR1": 20.382232704402515,
+    "AR10": 23.825628930817608,
+    "AR100": 24.24072327044025
+  }
+]

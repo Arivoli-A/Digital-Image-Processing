@@ -1,0 +1,19 @@
+Loading and preparing results...
+DONE (t=0.00s)
+creating index...
+index created!
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.054
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.061
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.061
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.039
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.091
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.057
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.057
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.057
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.037
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.090
+
+===== DETECTION METRICS =====
+OrderedDict([('bbox', {'AP': 5.448373408769448, 'AP50': 6.053748231966053, 'AP75': 6.053748231966053, 'APs': 0.0, 'APm': 3.8613861386138613, 'APl': 9.05940594059406, 'AP-bus': 0.0, 'AP-car': 0.0, 'AP-fire hydrant': 0.0, 'AP-person': 0.0, 'AP-skateboard': nan, 'AP-stop sign': 0.0, 'AP-traffic light': 0.0, 'AP-truck': 38.13861386138613, 'AP-bicycle': nan, 'AP-motorbike': nan, 'AP-aeroplane': nan, 'AP-train': nan, 'AP-boat': nan, 'AP-bench': nan, 'AP-parking meter': nan, 'AP-bird': nan, 'AP-dog': nan, 'AP-cat': nan, 'AP-horse': nan, 'AP-cow': nan, 'AP-sheep': nan, 'AP-elephant': nan, 'AP-bear': nan, 'AP-zebra': nan, 'AP-giraffe': nan, 'AP-backpack': nan, 'AP-umbrella': nan, 'AP-handbag': nan, 'AP-tie': nan, 'AP-suitcase': nan, 'AP-frisbee': nan, 'AP-skis': nan, 'AP-snowboard': nan, 'AP-sports ball': nan, 'AP-kite': nan, 'AP-baseball bat': nan, 'AP-baseball glove': nan, 'AP-surfboard': nan, 'AP-tennis racket': nan, 'AP-bottle': nan, 'AP-wine glass': nan, 'AP-cup': nan, 'AP-fork': nan, 'AP-knife': nan, 'AP-spoon': nan, 'AP-bowl': nan, 'AP-banana': nan, 'AP-apple': nan, 'AP-sandwich': nan, 'AP-orange': nan, 'AP-broccoli': nan, 'AP-carrot': nan, 'AP-hot dog': nan, 'AP-pizza': nan, 'AP-donut': nan, 'AP-cake': nan, 'AP-chair': nan, 'AP-sofa': nan, 'AP-pottedplant': nan, 'AP-bed': nan, 'AP-diningtable': nan, 'AP-toilet': nan, 'AP-tvmonitor': nan, 'AP-laptop': nan, 'AP-mouse': nan, 'AP-remote': nan, 'AP-keyboard': nan, 'AP-cell phone': nan, 'AP-microwave': nan, 'AP-oven': nan, 'AP-toaster': nan, 'AP-sink': nan, 'AP-refrigerator': nan, 'AP-book': nan, 'AP-clock': nan, 'AP-vase': nan, 'AP-scissors': nan, 'AP-teddy bear': nan, 'AP-hair drier': nan, 'AP-toothbrush': nan})])

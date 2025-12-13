@@ -1,0 +1,7 @@
+Method                                                   'brisque'     'niqe'     'piqe'      'nrqm'
+Ground truth                                              65.76525    6.7880244   29.942163   5.828679 
+LIME default (weight_strategy=3, gamma=0.4,std_dev=0.04)  54.59077    5.3989406   36.356644   6.4263635
+LIME (weight_strategy=1, gamma=0.4,std_dev=0.04)          56.41586    6.312756    35.706234   6.061493
+LIME (weight_strategy=2, gamma=0.4,std_dev=0.04)          54.052197   5.5659776   37.99542    6.3068867
+LIME (weight_strategy=3, gamma=0.4,std_dev=0.4)           57.331287   6.021449    37.360233   4.9610415
+LIME (weight_strategy=3, gamma=0.4,std_dev=0.004)         38.2461     4.260702    39.96315    7.0187044

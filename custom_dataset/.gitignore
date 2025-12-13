@@ -1,0 +1,38 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# IDE settings
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+
+# Environment files (optional)
+.env
+*.env
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# ---- Image Processing Outputs ----
+# Ignore generated images or results
+*.png
+*.jpg
+*.jpeg
+*.bmp
+*.tiff
+*.mp4
+
+# ---- OS Files ----
+.DS_Store
+Thumbs.db

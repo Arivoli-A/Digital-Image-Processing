@@ -1,0 +1,22 @@
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# PyTorch model checkpoints
+*.ckpt
+*.pth
+*.pt
+
+# TensorFlow checkpoints
+checkpoint
+*.ckpt.*
+
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyd
+*.pyo
+*.pyd
+*.py[cod]
