@@ -20,7 +20,11 @@ This module implements **Dark Channel Prior (DCP)** and a pipeline which combine
 
 ### Setting Dataset Up
 
-Download the `fog_data.zip` and `labels.json` from [this Google Drive folder](https://drive.google.com/drive/u/1/folders/1rKZmiwryIud3RELx5n39hYT4YGhbBqlf). Extract the `fog_data.zip` into `fog-removal/fog_dataset/input_images/unprocessed_images`. Put the `labels.json` in `fog-removal/fog_dataset`.
+1. Download the `fog_data.zip` and `labels.json` from [this Google Drive folder](https://drive.google.com/drive/u/1/folders/1rKZmiwryIud3RELx5n39hYT4YGhbBqlf). 
+   
+2. Extract the `fog_data.zip` into `fog-removal/fog_dataset/input_images/unprocessed_images`. 
+   
+3. Put the `labels.json` in `fog-removal/fog_dataset`.
 
 ### Running Fog Removal Experiments
 
@@ -49,7 +53,7 @@ This module implements low-light image enhancement techniques such as **BIMEF** 
 
 ### Running Low-Light Enhancement Experiments
 
-The low-light enhancement experiments are located in the `low-light` folder, within the `Low_Light_experiment.ipynb` notebook. To run the experiments, select the `opencv_env` kernel inJupyter Notebook.
+The low-light enhancement experiments are located in the `low-light` folder, within the `Low_Light_experiment.ipynb` notebook. To run the experiments, select the `opencv_env` kernel in Jupyter Notebook.
 
 
 - **LIME**: Python implementation is available in this repository, adapted from [Python-LIME](https://github.com/wiitt/Python-LIME). A C++ version is also explored: [LIME_Processing](https://github.com/zj611/LIME_Processing.git).  
