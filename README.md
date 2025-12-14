@@ -12,6 +12,8 @@ conda activate opencv_env
 
 2. Download the model weights `untuned_model.pth` from [this Google Drive folder](https://drive.google.com/drive/u/1/folders/1H_2U9atsOXpjMnzDovqmYGdlFC5n7mvb). Put the `untuned_model.pth` file into the `FasterRCNN` directory.
 
+If you want to annotate any of the images, update the image directories in `annotation.py` and then run it.
+
 ## Fog Removal
 
 This module implements **Dark Channel Prior (DCP)** and a pipeline which combines **DCP** and **DWT/CLAHE** from the [2018 Kim et al. paper](https://doi.org/10.1049/iet-ipr.2016.0819) to remove fog from images.
