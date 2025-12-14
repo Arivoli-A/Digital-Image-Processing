@@ -1,0 +1,41 @@
+[
+  {
+    "folder_id": "fog_unprocessed",
+    "description": "Fog Removal - Unprocessed Images",
+    "num_images": 618,
+    "num_predictions": 8999,
+    "num_visualizations": 618,
+    "AP": 27.99484285884741,
+    "AP50": 46.29128578387797,
+    "AP75": 29.577722321528228,
+    "AR1": 23.18304723045251,
+    "AR10": 40.496574481838934,
+    "AR100": 40.97160884890246
+  },
+  {
+    "folder_id": "fog_kim_pipeline",
+    "description": "Fog Removal - Kim Pipeline Images",
+    "num_images": 618,
+    "num_predictions": 9187,
+    "num_visualizations": 618,
+    "AP": 25.571393032622655,
+    "AP50": 43.422239828694146,
+    "AP75": 26.16797683278353,
+    "AR1": 23.012155280119725,
+    "AR10": 39.06282855009207,
+    "AR100": 39.6544347989417
+  },
+  {
+    "folder_id": "fog_dcp",
+    "description": "Fog Removal - DCP Images",
+    "num_images": 618,
+    "num_predictions": 8843,
+    "num_visualizations": 618,
+    "AP": 26.340246036620254,
+    "AP50": 44.553263849367546,
+    "AP75": 26.888631742554303,
+    "AR1": 22.98218869750633,
+    "AR10": 39.5272431937983,
+    "AR100": 40.046958813891855
+  }
+]

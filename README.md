@@ -1,11 +1,7 @@
 # Digital-Image-Processing
 Digital Image Processing for Autonomous Vehicles
 
-## Low-Light Enhancement
-
-This module implements low-light image enhancement techniques such as **BIMEF** and **LIME** to improve visibility in night-time or poorly lit images.
-
-### Setup
+## Setup
 
 1. **Create and activate the conda environment**:
 
@@ -13,6 +9,41 @@ This module implements low-light image enhancement techniques such as **BIMEF** 
 bash conda_setup.sh
 conda activate opencv_env
 ```
+
+2. Download the model weights `untuned_model.pth` from [this Google Drive folder](https://drive.google.com/drive/u/1/folders/1H_2U9atsOXpjMnzDovqmYGdlFC5n7mvb). Put the `untuned_model.pth` file into the `FasterRCNN` directory.
+
+## Fog Removal
+
+This module implements **Dark Channel Prior (DCP)** and a pipeline which combines **DCP** and **DWT/CLAHE** from the [2018 Kim et al. paper](https://doi.org/10.1049/iet-ipr.2016.0819) to remove fog from images.
+
+### Setting Dataset Up
+
+Download the `fog_data.zip` and `labels.json` from [this Google Drive folder](https://drive.google.com/drive/u/1/folders/1rKZmiwryIud3RELx5n39hYT4YGhbBqlf). Extract the `fog_data.zip` into `fog-removal/fog_dataset/input_images/unprocessed_images`. Put the `labels.json` in `fog-removal/fog_dataset`.
+
+### Running Fog Removal Experiments
+
+1. The first thing you need to do is preprocess the unprocessed images using the **DCP** and **DCP/DWT/CLAHE** pipelines. To do this, run the following commands:
+```bash
+cd fog-removal
+python image_preprocessing.py
+```
+
+2. To run the experiment that compares the performance of the untuned FasterRCNN model on the unprocessed and processed images, run the following command:
+```bash
+python eval_image_processing_fog.py
+```
+
+3. To run the experiment that finetunes the FasterRCNN model and then compares it to the results from step 2, run the following command:
+```bash
+python eval_finetuning_fog.py
+```
+
+All of the results from the experiments are saved in the `evaluation_results/fog` folder.
+
+## Low-Light Enhancement
+
+This module implements low-light image enhancement techniques such as **BIMEF** and **LIME** to improve visibility in night-time or poorly lit images.
+
 
 ### Running Low-Light Enhancement Experiments
 
