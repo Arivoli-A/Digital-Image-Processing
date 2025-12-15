@@ -46,33 +46,94 @@ python eval_finetuning_fog.py
 
 All of the results from the experiments are saved in the `evaluation_results/fog` folder.
 
-## Rain Supression
+ ## Rain Suppression
 
-This module implements Wavelet Transform and a Morphilogical Component Analysis Approach which can be used to remove rain occlusions from images.
+  This module implements Wavelet Transform and Morphological Component Analysis approaches to remove rain occlusions from images, improving object detection performance in rainy conditions.
 
+  ### Setting Up the Dataset
 
-### Setting Dataset Up
+  1. Download the `images_pre_processed.tar.gz` and `rain_annotations.json` from [this Google Drive folder](https://drive.google.com/drive/u/1/folders/1rKZmiwryIud3RELx5n39hYT4YGhbBqlf).
 
-1. Download the `images_pre_processed.tar.gz` and `rain_annotations.json` from [this Google Drive folder](https://drive.google.com/drive/u/1/folders/1rKZmiwryIud3RELx5n39hYT4YGhbBqlf). 
-   
-2. Extract the `images_pre_processed.tar.gz` into `rain-removal/images_pre_processed`. 
-   
-3. Put the `rain_annotations.json` in the main directory.
+  2. Extract the `images_pre_processed.tar.gz` into `rain-removal/images_pre_processed`:
+     ```bash
+     cd rain-removal
+     tar -xzf images_pre_processed.tar.gz
 
-### Running Fog Removal Experiments
+  3. Place the rain_annotations.json file in the rain-removal directory.
 
-1. First, you must run the Wavelet Filtering or MCA processing on the images in the rain dataset. Do this by going into ```rain-removal/rain_removal_optimized.ipynb``` , choosing the processing method, and running the notebook.
+  Running Rain Removal Experiments
 
+  Step 1: Preprocess Images
 
-2. To evaluate the performance of the detectron model on both the unprocessed and processed sets of images, run this command.
-```bash
-python eval_image_processing_fog.py
-```
+  First, run the Wavelet Filtering or MCA processing on the images in the rain dataset:
 
-3. To run the experiment that finetunes the FasterRCNN model and then compares it to the results from step 2, run the following commands:
-```bash
-python evaluation_a_rain.py
-```
+  1. Open rain-removal/rain_removal_optimized.ipynb
+  2. Choose your processing method (Wavelet or MCA)
+  3. Run all cells in the notebook
+
+  This will create processed image directories:
+  - inputs_images_processed_wavelet/ for Wavelet processing
+  - inputs_images_processed_mca/ for MCA processing
+
+  Step 2: Evaluate Model Performance
+
+  Evaluate the Faster R-CNN model on both unprocessed and processed images:
+
+  Basic usage:
+  # Evaluate with baseline BDD100K model on Wavelet-processed images
+  python evaluation_a_rain.py wavelet
+
+  # Evaluate with baseline BDD100K model on MCA-processed images
+  python evaluation_a_rain.py mca
+
+  Using the fine-tuned model:
+  # Evaluate with rain fine-tuned model on Wavelet-processed images
+  python evaluation_a_rain.py wavelet --model finetuned
+
+  # Evaluate with rain fine-tuned model on MCA-processed images
+  python evaluation_a_rain.py mca --model finetuned
+
+  Arguments:
+  - processed_type (required): Choose wavelet or mca
+  - --model: Choose baseline (default) or finetuned
+
+  Output:
+  - Results saved to evaluation_results/
+  - Visualized predictions saved to output_unprocessed_images/ and output_processed_{type}/
+  - Metrics: AP, AP50, AP75, AR
+
+  Step 3: Fine-tune the Model (Optional)
+
+  Fine-tune the Faster R-CNN model on the rain dataset:
+
+  Basic usage with default settings:
+  python finetune_rcnn_rain.py
+
+  Custom training configuration:
+  python finetune_rcnn_rain.py \
+    --images ./images_pre_processed \
+    --annotations ./rain_annotations.json \
+    --iterations 5000 \
+    --batch-size 4 \
+    --learning-rate 0.0005
+
+  Available arguments:
+  - --images: Path to training images (default: ./images_pre_processed)
+  - --annotations: Path to annotations JSON (default: ./rain_annotations.json)
+  - --base-checkpoint: Base model to start from (default: ../FasterRCNN/finetune_bdd.pth)
+  - --output-dir: Directory for training outputs (default: ../FasterRCNN/rain_finetuned)
+  - --output-model-name: Final model filename (default: finetune_rain.pth)
+  - --batch-size: Training batch size (default: 2)
+  - --learning-rate: Learning rate (default: 0.00025)
+  - --iterations: Maximum training iterations (default: 3000)
+  - --val-split: Validation split ratio (default: 0.2)
+  - --checkpoint-period: Save checkpoint every N iterations (default: 500)
+  - --eval-period: Evaluate every N iterations (default: 300)
+
+  Output:
+  - Training checkpoints saved to ../FasterRCNN/rain_finetuned/
+  - Final model saved as ../FasterRCNN/finetune_rain.pth
+  - Training logs and validation results displayed during training
 
 All of the results from the experiments are saved in the `rain-removal/evaluation_results` folder.
 
