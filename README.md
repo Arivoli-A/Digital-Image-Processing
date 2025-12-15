@@ -71,7 +71,6 @@ python eval_image_processing_fog.py
 
 3. To run the experiment that finetunes the FasterRCNN model and then compares it to the results from step 2, run the following commands:
 ```bash
-cd ~
 python evaluation_a_rain.py
 ```
 
