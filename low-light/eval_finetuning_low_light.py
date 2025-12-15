@@ -31,10 +31,10 @@ setup_logger()
 # =============================================================================
 
 DATASET_CONFIG = {
-    "train_images": "./low-light/ground_truth/train",
-    "train_annotations": "./low-light/ground_truth/train/instances_default_train_bdd100k.json",
-    "val_images": "./low-light/ground_truth/test",
-    "val_annotations": "./low-light/ground_truth/test/instances_default_test_bdd100k.json",
+    "train_images": "./ground_truth/train",
+    "train_annotations": "./ground_truth/train/instances_default_train_bdd100k.json",
+    "val_images": "./ground_truth/test",
+    "val_annotations": "./ground_truth/test/instances_default_test_bdd100k.json",
     "val_split_ratio": 0.2,
 }
 
