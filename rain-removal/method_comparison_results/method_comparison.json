@@ -1,0 +1,66 @@
+{
+  "model": "Base BDD100K Model",
+  "max_images": 10,
+  "results": [
+    {
+      "method": "none",
+      "description": "No preprocessing (baseline)",
+      "images": 10,
+      "predictions": 144,
+      "AP": 23.37037672863803,
+      "AP50": 29.181600884719117,
+      "AP75": 27.453683022428805,
+      "AR": 24.999677502579978
+    },
+    {
+      "method": "gamma",
+      "description": "Gamma correction (\u03b3=1.05)",
+      "images": 10,
+      "predictions": 145,
+      "AP": 22.861551855722077,
+      "AP50": 28.468247104247734,
+      "AP75": 26.762094738651733,
+      "AR": 24.999677502579978
+    },
+    {
+      "method": "bilateral",
+      "description": "Bilateral filtering (edge-preserving)",
+      "images": 10,
+      "predictions": 143,
+      "AP": 22.79826717402483,
+      "AP50": 29.199525071675524,
+      "AP75": 27.49783251773171,
+      "AR": 24.5859133126935
+    },
+    {
+      "method": "clahe",
+      "description": "CLAHE contrast enhancement",
+      "images": 10,
+      "predictions": 139,
+      "AP": 20.87252267452146,
+      "AP50": 28.359938466617685,
+      "AP75": 24.88327156066223,
+      "AR": 23.470878482972136
+    },
+    {
+      "method": "combined",
+      "description": "Gamma + Bilateral combined",
+      "images": 10,
+      "predictions": 141,
+      "AP": 22.62432848923524,
+      "AP50": 28.515366445388175,
+      "AP75": 26.850515492648913,
+      "AR": 24.7390995872033
+    }
+  ],
+  "best_method": {
+    "method": "none",
+    "description": "No preprocessing (baseline)",
+    "images": 10,
+    "predictions": 144,
+    "AP": 23.37037672863803,
+    "AP50": 29.181600884719117,
+    "AP75": 27.453683022428805,
+    "AR": 24.999677502579978
+  }
+}

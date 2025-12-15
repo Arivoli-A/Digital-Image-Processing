@@ -1,0 +1,1737 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <job>
+      <id>3373601</id>
+      <size>100</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <created>2025-12-11 09:13:23.751744+00:00</created>
+      <updated>2025-12-11 10:34:46.570519+00:00</updated>
+      <subset>default</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>99</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>3374950</id>
+          <start>0</start>
+          <stop>99</stop>
+          <url>https://app.cvat.ai/api/jobs/3373601</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>Anz009</username>
+        <email>thepot8totheory@gmail.com</email>
+      </owner>
+      <assignee>
+        <username>Anz009</username>
+        <email>thepot8totheory@gmail.com</email>
+      </assignee>
+      <labels>
+        <label>
+          <name>pedestrian</name>
+          <color>#80e060</color>
+          <type>any</type>
+          <attributes>
+            <attribute>
+              <name>label_id</name>
+              <mutable>True</mutable>
+              <input_type>text</input_type>
+              <default_value></default_value>
+              <values></values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>car</name>
+          <color>#2080c0</color>
+          <type>any</type>
+          <attributes>
+            <attribute>
+              <name>label_id</name>
+              <mutable>True</mutable>
+              <input_type>text</input_type>
+              <default_value></default_value>
+              <values></values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>truck</name>
+          <color>#906080</color>
+          <type>any</type>
+          <attributes>
+            <attribute>
+              <name>label_id</name>
+              <mutable>True</mutable>
+              <input_type>text</input_type>
+              <default_value></default_value>
+              <values></values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>bus</name>
+          <color>#204080</color>
+          <type>any</type>
+          <attributes>
+            <attribute>
+              <name>label_id</name>
+              <mutable>True</mutable>
+              <input_type>text</input_type>
+              <default_value></default_value>
+              <values></values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>bicycle</name>
+          <color>#004040</color>
+          <type>any</type>
+          <attributes>
+            <attribute>
+              <name>label_id</name>
+              <mutable>True</mutable>
+              <input_type>text</input_type>
+              <default_value></default_value>
+              <values></values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>motorcycle</name>
+          <color>#80a0a0</color>
+          <type>any</type>
+          <attributes>
+            <attribute>
+              <name>label_id</name>
+              <mutable>True</mutable>
+              <input_type>text</input_type>
+              <default_value></default_value>
+              <values></values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>rider</name>
+          <color>#20e060</color>
+          <type>any</type>
+          <attributes>
+            <attribute>
+              <name>label_id</name>
+              <mutable>True</mutable>
+              <input_type>text</input_type>
+              <default_value></default_value>
+              <values></values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>traffic light</name>
+          <color>#d0a000</color>
+          <type>any</type>
+          <attributes>
+            <attribute>
+              <name>label_id</name>
+              <mutable>True</mutable>
+              <input_type>text</input_type>
+              <default_value></default_value>
+              <values></values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>traffic sign</name>
+          <color>#502080</color>
+          <type>any</type>
+          <attributes>
+            <attribute>
+              <name>label_id</name>
+              <mutable>True</mutable>
+              <input_type>text</input_type>
+              <default_value></default_value>
+              <values></values>
+            </attribute>
+          </attributes>
+        </label>
+      </labels>
+    </job>
+    <dumped>2025-12-11 10:35:41.597348+00:00</dumped>
+  </meta>
+  <image id="3" name="rain_image_10.jpg" width="3420" height="2214">
+    <box label="car" source="manual" occluded="0" xtl="2053.00" ytl="1634.00" xbr="2963.00" ybr="2108.00" z_order="0">
+      <attribute name="label_id">693a8b29247682d7f527359a</attribute>
+    </box>
+    <box label="truck" source="manual" occluded="0" xtl="537.00" ytl="1584.00" xbr="779.20" ybr="1743.00" z_order="0">
+      <attribute name="label_id">693a8b29247682d7f527359c</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1448.18" ytl="1667.00" xbr="1523.01" ybr="1728.93" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1551.40" ytl="1636.03" xbr="1773.31" ybr="1801.18" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1287.00" ytl="1670.00" xbr="1358.00" ybr="1720.00" z_order="0">
+      <attribute name="label_id">693a8b29247682d7f527359b</attribute>
+    </box>
+  </image>
+  <image id="4" name="rain_image_11.jpg" width="3420" height="2214">
+    <box label="traffic light" source="manual" occluded="0" xtl="1862.23" ytl="1052.48" xbr="1942.96" ybr="1111.47" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="1628.00" ytl="1141.00" xbr="1851.00" ybr="1264.00" z_order="0">
+      <attribute name="label_id">693a8b29247682d7f527359d</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="2681.62" ytl="1380.57" xbr="3311.24" ybr="1664.42" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="2082.68" ytl="1052.48" xbr="2160.30" ybr="1111.50" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="5" name="rain_image_12.jpg" width="3420" height="2214">
+    <box label="car" source="manual" occluded="0" xtl="1817.18" ytl="1455.40" xbr="2021.03" ybr="1594.75" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1603.00" ytl="1447.66" xbr="1698.48" ybr="1545.72" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="6" name="rain_image_13.jpg" width="3420" height="2214">
+    <box label="traffic light" source="manual" occluded="0" xtl="1837.95" ytl="1261.91" xbr="1885.15" ybr="1287.48" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1682.15" ytl="1260.51" xbr="1744.25" ybr="1291.56" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="2635.00" ytl="1250.00" xbr="2757.00" ybr="1364.00" z_order="0">
+      <attribute name="label_id">693a8b29247682d7f52735a1</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="501.00" ytl="1434.00" xbr="822.00" ybr="1570.00" z_order="0">
+      <attribute name="label_id">693a8b29247682d7f52735a0</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1359.00" ytl="1437.00" xbr="1562.00" ybr="1582.00" z_order="0">
+      <attribute name="label_id">693a8b29247682d7f527359e</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1674.00" ytl="1458.00" xbr="1882.00" ybr="1644.00" z_order="0">
+      <attribute name="label_id">693a8b29247682d7f527359f</attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="2302.09" ytl="1297.31" xbr="2366.99" ybr="1366.15" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="7" name="rain_image_14.jpg" width="3420" height="2214">
+    <box label="traffic sign" source="manual" occluded="0" xtl="2081.00" ytl="928.00" xbr="2301.00" ybr="994.00" z_order="0">
+      <attribute name="label_id">693a8b29247682d7f52735a6</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1586.00" ytl="1446.00" xbr="1740.00" ybr="1589.00" z_order="0">
+      <attribute name="label_id">693a8b29247682d7f52735a4</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1983.00" ytl="1011.00" xbr="2031.00" ybr="1073.00" z_order="0">
+      <attribute name="label_id">693a8b29247682d7f52735a5</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1811.00" ytl="1455.00" xbr="1908.00" ybr="1520.00" z_order="0">
+      <attribute name="label_id">693a8b29247682d7f52735a7</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="732.00" ytl="264.00" xbr="892.00" ybr="460.00" z_order="0">
+      <attribute name="label_id">693a8b29247682d7f52735a8</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1983.00" ytl="1012.00" xbr="2033.00" ybr="1110.00" z_order="0">
+      <attribute name="label_id">693a8b29247682d7f52735a9</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1938.46" ytl="1445.08" xbr="2072.64" ybr="1561.20" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="pedestrian" source="manual" occluded="0" xtl="2921.60" ytl="1398.64" xbr="3112.55" ybr="1625.71" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1665.00" ytl="994.00" xbr="1712.00" ybr="1110.00" z_order="0">
+      <attribute name="label_id">693a8b29247682d7f52735a3</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="3216.00" ytl="699.00" xbr="3304.00" ybr="852.00" z_order="0">
+      <attribute name="label_id">693a8b29247682d7f52735a2</attribute>
+    </box>
+  </image>
+  <image id="8" name="rain_image_15.jpg" width="3420" height="2214">
+    <box label="bus" source="manual" occluded="0" xtl="1358.00" ytl="1124.00" xbr="1893.00" ybr="1754.00" z_order="0">
+      <attribute name="label_id">693a8b29247682d7f52735ab</attribute>
+    </box>
+    <box label="bicycle" source="manual" occluded="0" xtl="0.00" ytl="1506.00" xbr="474.00" ybr="2073.00" z_order="0">
+      <attribute name="label_id">693a8b29247682d7f52735aa</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="2921.60" ytl="1282.52" xbr="3420.00" ybr="1574.10" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="9" name="rain_image_16.jpg" width="3420" height="2214">
+    <box label="car" source="manual" occluded="0" xtl="1371.00" ytl="1278.00" xbr="1904.00" ybr="1777.00" z_order="0">
+      <attribute name="label_id">693a8b29247682d7f52735ad</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="2483.00" ytl="1018.00" xbr="2610.00" ybr="1178.00" z_order="0">
+      <attribute name="label_id">693a8b29247682d7f52735af</attribute>
+    </box>
+    <box label="bicycle" source="manual" occluded="0" xtl="231.00" ytl="1418.00" xbr="549.00" ybr="1605.00" z_order="0">
+      <attribute name="label_id">693a8b29247682d7f52735ae</attribute>
+    </box>
+    <box label="bicycle" source="manual" occluded="0" xtl="676.00" ytl="1441.00" xbr="951.00" ybr="1840.00" z_order="0">
+      <attribute name="label_id">693a8b29247682d7f52735ac</attribute>
+    </box>
+  </image>
+  <image id="10" name="rain_image_17.jpg" width="3420" height="2214">
+    <box label="pedestrian" source="manual" occluded="0" xtl="436.00" ytl="1268.00" xbr="527.00" ybr="1485.00" z_order="0">
+      <attribute name="label_id">693a8b29247682d7f52735b1</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="2423.00" ytl="1269.00" xbr="2649.00" ybr="1418.00" z_order="0">
+      <attribute name="label_id">693a8b29247682d7f52735b0</attribute>
+    </box>
+    <box label="truck" source="manual" occluded="0" xtl="1517.85" ytl="1202.52" xbr="1621.07" ybr="1341.87" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="211.00" ytl="997.00" xbr="264.00" ybr="1083.00" z_order="0">
+      <attribute name="label_id">693a8b29247682d7f52735b3</attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="1604.00" ytl="956.00" xbr="1792.00" ybr="1115.00" z_order="0">
+      <attribute name="label_id">693a8b29247682d7f52735b2</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="3001.59" ytl="1210.27" xbr="3420.00" ybr="1494.11" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="11" name="rain_image_18.jpg" width="3420" height="2214">
+    <box label="car" source="manual" occluded="0" xtl="1396.57" ytl="1261.87" xbr="1742.35" ybr="1566.36" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="2617.11" ytl="864.49" xbr="2769.35" ybr="929.00" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="pedestrian" source="manual" occluded="0" xtl="586.32" ytl="1277.36" xbr="813.40" ybr="1607.65" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="2331.00" ytl="1326.00" xbr="2624.00" ybr="1478.00" z_order="0">
+      <attribute name="label_id">693a8b29247682d7f52735b7</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1208.00" ytl="1293.00" xbr="1392.00" ybr="1509.00" z_order="0">
+      <attribute name="label_id">693a8b29247682d7f52735b6</attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="1641.00" ytl="1167.00" xbr="1757.00" ybr="1264.00" z_order="0">
+      <attribute name="label_id">693a8b29247682d7f52735b5</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="2650.00" ytl="1197.00" xbr="3420.00" ybr="1783.00" z_order="0">
+      <attribute name="label_id">693a8b29247682d7f52735b4</attribute>
+    </box>
+    <box label="pedestrian" source="manual" occluded="0" xtl="258.61" ytl="1223.17" xbr="496.00" ybr="1682.48" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="12" name="rain_image_19.jpg" width="3420" height="2214">
+    <box label="pedestrian" source="manual" occluded="0" xtl="810.82" ytl="1277.36" xbr="960.48" ybr="1543.14" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1695.90" ytl="761.27" xbr="1948.78" ybr="830.94" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="1985.17" ytl="1061.85" xbr="2061.32" ybr="1159.33" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="1622.66" ytl="1058.80" xbr="1750.60" ybr="1174.56" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="14" name="rain_image_20.jpg" width="3420" height="2214">
+    <box label="car" source="manual" occluded="0" xtl="975.00" ytl="1590.00" xbr="1186.00" ybr="1771.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735b8</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1828.00" ytl="1556.00" xbr="2319.00" ybr="1965.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735bb</attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="748.00" ytl="1314.00" xbr="837.00" ybr="1404.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735ba</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1480.00" ytl="1629.00" xbr="1622.00" ybr="1720.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735b9</attribute>
+    </box>
+  </image>
+  <image id="15" name="rain_image_21.jpg" width="3420" height="2214">
+    <box label="truck" source="manual" occluded="0" xtl="21.21" ytl="1463.15" xbr="586.32" ybr="1772.80" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="truck" source="manual" occluded="0" xtl="1608.00" ytl="1593.00" xbr="1918.00" ybr="1847.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735bd</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1283.00" ytl="1641.00" xbr="1359.00" ybr="1706.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735bc</attribute>
+    </box>
+  </image>
+  <image id="16" name="rain_image_22.jpg" width="3420" height="2214">
+    <box label="car" source="manual" occluded="0" xtl="1081.00" ytl="1653.00" xbr="1214.00" ybr="1753.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735c1</attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="1458.00" ytl="1450.00" xbr="1576.00" ybr="1549.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735be</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="0.00" ytl="1537.00" xbr="646.00" ybr="2104.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735bf</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1365.00" ytl="1642.00" xbr="1487.00" ybr="1717.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735c0</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="905.00" ytl="1641.00" xbr="988.00" ybr="1702.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735c2</attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="1605.00" ytl="1459.00" xbr="1707.00" ybr="1509.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735c3</attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="1640.00" ytl="1459.00" xbr="1706.00" ybr="1497.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735c4</attribute>
+    </box>
+    <box label="truck" source="manual" occluded="0" xtl="1566.88" ytl="1517.34" xbr="1783.63" ybr="1754.73" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="17" name="rain_image_23.jpg" width="3420" height="2214">
+    <box label="truck" source="manual" occluded="0" xtl="1719.12" ytl="1380.60" xbr="2206.80" ybr="1888.91" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1205.62" ytl="1646.36" xbr="1334.64" ybr="1775.38" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="18" name="rain_image_24.jpg" width="3420" height="2214">
+    <box label="car" source="manual" occluded="0" xtl="275.00" ytl="1657.00" xbr="442.00" ybr="1709.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735c6</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1178.00" ytl="1668.00" xbr="1262.00" ybr="1725.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735c5</attribute>
+    </box>
+    <box label="truck" source="manual" occluded="0" xtl="903.71" ytl="1594.75" xbr="1141.11" ybr="1819.24" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="19" name="rain_image_25.jpg" width="3420" height="2214">
+    <box label="traffic light" source="manual" occluded="0" xtl="1188.00" ytl="1348.00" xbr="1231.00" ybr="1418.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735c8</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="2138.00" ytl="1135.00" xbr="2192.00" ybr="1230.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735c9</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="960.00" ytl="1027.00" xbr="1020.00" ybr="1160.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735cb</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="0.00" ytl="1447.00" xbr="601.00" ybr="1692.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735c7</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1056.00" ytl="1042.00" xbr="1103.00" ybr="1143.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735ca</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="2516.47" ytl="1109.63" xbr="2555.18" ybr="1205.10" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="2330.68" ytl="1143.17" xbr="2390.03" ybr="1236.07" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="20" name="rain_image_26.jpg" width="3420" height="2214">
+    <box label="car" source="manual" occluded="0" xtl="2106.19" ytl="1385.73" xbr="2591.31" ybr="1744.41" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="2322.00" ytl="897.00" xbr="2509.00" ybr="1043.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735d6</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="2716.00" ytl="1099.00" xbr="2769.00" ybr="1226.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735d5</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="2863.00" ytl="1460.00" xbr="3263.00" ybr="1628.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735d4</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1954.00" ytl="845.00" xbr="2110.00" ybr="928.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735d3</attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="3246.00" ytl="1189.00" xbr="3370.00" ybr="1326.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735d2</attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="391.00" ytl="822.00" xbr="526.00" ybr="870.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735d1</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="602.00" ytl="1425.00" xbr="973.00" ybr="1549.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735d0</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1510.00" ytl="1438.00" xbr="1625.00" ybr="1536.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735cf</attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="2118.00" ytl="874.00" xbr="2353.00" ybr="933.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735ce</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="0.00" ytl="1432.00" xbr="494.00" ybr="1704.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735cd</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1274.00" ytl="1447.00" xbr="1527.00" ybr="1623.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735cc</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="281.83" ytl="895.45" xbr="405.69" ybr="1114.79" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="2823.54" ytl="1027.06" xbr="2931.92" ybr="1065.76" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="1806.86" ytl="825.78" xbr="1912.66" ybr="929.00" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="21" name="rain_image_27.jpg" width="3420" height="2214">
+    <box label="traffic light" source="manual" occluded="0" xtl="1169.04" ytl="1325.95" xbr="1194.97" ybr="1385.60" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1554.00" ytl="1264.45" xbr="1608.17" ybr="1287.68" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="199.26" ytl="1465.73" xbr="661.15" ybr="1610.23" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="pedestrian" source="manual" occluded="0" xtl="2790.00" ytl="1362.50" xbr="2949.98" ybr="1607.65" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1419.00" ytl="1427.00" xbr="1506.00" ybr="1510.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735d7</attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="1760.41" ytl="1267.03" xbr="1842.98" ybr="1300.58" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1698.48" ytl="1264.45" xbr="1752.67" ybr="1292.84" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="22" name="rain_image_28.jpg" width="3420" height="2214">
+    <box label="car" source="manual" occluded="0" xtl="539.00" ytl="1324.00" xbr="857.00" ybr="1505.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735dd</attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="2728.00" ytl="625.00" xbr="3019.00" ybr="698.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735e2</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1839.00" ytl="506.00" xbr="1933.00" ybr="711.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735d8</attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="2423.00" ytl="621.00" xbr="2711.00" ybr="698.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735e1</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="0.00" ytl="1209.00" xbr="557.00" ybr="1787.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735d9</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="746.00" ytl="1334.00" xbr="1082.00" ybr="1542.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735e0</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1252.00" ytl="1329.00" xbr="1733.00" ybr="1607.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735de</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1162.00" ytl="427.00" xbr="1259.00" ybr="684.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735da</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1120.00" ytl="1332.00" xbr="1293.00" ybr="1464.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735df</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="2320.00" ytl="525.00" xbr="2414.00" ybr="729.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735db</attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="1311.00" ytl="513.00" xbr="1456.00" ybr="681.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735dc</attribute>
+    </box>
+  </image>
+  <image id="23" name="rain_image_29.jpg" width="3420" height="2214">
+    <box label="traffic sign" source="manual" occluded="0" xtl="1174.22" ytl="1115.90" xbr="1311.68" ybr="1300.01" rotation="0.10" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1576.00" ytl="1347.00" xbr="1777.00" ybr="1507.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735e3</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="526.00" ytl="1337.00" xbr="797.00" ybr="1497.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735e4</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="0.00" ytl="1282.00" xbr="543.00" ybr="1608.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735e5</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="2769.00" ytl="1280.00" xbr="3028.00" ybr="1416.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735e6</attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="2701.85" ytl="1123.65" xbr="2808.19" ybr="1271.48" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1941.93" ytl="1318.20" xbr="2242.78" ybr="1528.25" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="24" name="rain_image_3.jpg" width="4284" height="5712">
+    <box label="traffic sign" source="manual" occluded="0" xtl="344.80" ytl="3383.98" xbr="509.90" ybr="3894.83" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="25" name="rain_image_30.jpg" width="3420" height="2214">
+    <box label="car" source="manual" occluded="0" xtl="670.00" ytl="1490.00" xbr="750.00" ybr="1579.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735ea</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="2885.00" ytl="1133.00" xbr="3420.00" ybr="2113.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735e7</attribute>
+    </box>
+    <box label="bicycle" source="manual" occluded="0" xtl="2173.00" ytl="1459.00" xbr="2486.00" ybr="1692.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735e9</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="698.00" ytl="1045.00" xbr="755.00" ybr="1185.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735e8</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="212.00" ytl="1439.00" xbr="657.00" ybr="1623.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735ef</attribute>
+    </box>
+    <box label="truck" source="manual" occluded="0" xtl="1594.00" ytl="1401.00" xbr="1840.00" ybr="1642.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735ee</attribute>
+    </box>
+    <box label="motorcycle" source="manual" occluded="0" xtl="2173.00" ytl="1459.00" xbr="2487.00" ybr="1694.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735eb</attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="2266.00" ytl="1158.00" xbr="2415.00" ybr="1229.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735ed</attribute>
+    </box>
+  </image>
+  <image id="26" name="rain_image_31.jpg" width="3420" height="2214">
+    <box label="car" source="manual" occluded="0" xtl="2115.00" ytl="1404.00" xbr="2451.00" ybr="1608.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735f3</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="2114.00" ytl="1401.00" xbr="2710.00" ybr="1610.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735f4</attribute>
+    </box>
+    <box label="pedestrian" source="manual" occluded="0" xtl="34.00" ytl="1430.00" xbr="188.00" ybr="1850.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735f5</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="2040.50" ytl="1113.27" xbr="2118.29" ybr="1248.14" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1289.00" ytl="1293.00" xbr="1968.00" ybr="1920.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735f0</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="810.00" ytl="1152.00" xbr="879.00" ybr="1281.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735f1</attribute>
+    </box>
+  </image>
+  <image id="27" name="rain_image_32.jpg" width="3420" height="2214">
+    <box label="car" source="manual" occluded="0" xtl="2663.00" ytl="1116.00" xbr="3420.00" ybr="2097.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735f7</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1306.00" ytl="1167.00" xbr="2129.00" ybr="1951.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735f6</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="2253.16" ytl="1250.73" xbr="2823.75" ybr="1730.55" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="28" name="rain_image_33.jpg" width="3420" height="2214">
+    <box label="car" source="manual" occluded="0" xtl="1560.67" ytl="1471.19" xbr="1612.54" ybr="1520.47" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="pedestrian" source="manual" occluded="0" xtl="1820.03" ytl="1424.50" xbr="1903.02" ybr="1590.50" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="29" name="rain_image_34.jpg" width="3420" height="2214">
+    <box label="car" source="manual" occluded="0" xtl="1338.00" ytl="1423.00" xbr="1557.00" ybr="1569.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735f9</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="82.00" ytl="1280.00" xbr="1147.00" ybr="1904.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735f8</attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="2053.45" ytl="1229.99" xbr="2131.26" ybr="1263.70" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="1608.00" ytl="979.00" xbr="1690.00" ybr="1060.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735fe</attribute>
+    </box>
+    <box label="pedestrian" source="manual" occluded="0" xtl="2452.00" ytl="1319.00" xbr="2606.00" ybr="1636.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735ff</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="0.00" ytl="1432.00" xbr="167.00" ybr="1568.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f5273600</attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="1237.00" ytl="1341.00" xbr="1285.00" ybr="1394.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f5273601</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="821.50" ytl="1175.52" xbr="870.77" ybr="1276.70" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1475.10" ytl="991.37" xbr="1568.45" ybr="1030.28" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1734.44" ytl="1009.53" xbr="1830.40" ybr="1040.65" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="1853.00" ytl="1008.00" xbr="2027.00" ybr="1057.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735fd</attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="824.00" ytl="1072.00" xbr="905.00" ybr="1114.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735fc</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="2784.00" ytl="1396.00" xbr="3215.00" ybr="1536.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735fb</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="3206.00" ytl="1348.00" xbr="3420.00" ybr="1525.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f52735fa</attribute>
+    </box>
+  </image>
+  <image id="30" name="rain_image_35.jpg" width="3420" height="2214">
+    <box label="traffic light" source="manual" occluded="0" xtl="2566.00" ytl="238.00" xbr="2700.00" ybr="484.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f5273602</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1516.00" ytl="800.00" xbr="1683.00" ybr="888.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f5273606</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1265.00" ytl="1439.00" xbr="1334.00" ybr="1552.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f5273607</attribute>
+    </box>
+    <box label="pedestrian" source="manual" occluded="0" xtl="2452.90" ytl="1372.63" xbr="2605.89" ybr="1694.24" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="1069.00" ytl="760.00" xbr="1249.00" ybr="847.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f5273605</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="3263.00" ytl="1387.00" xbr="3420.00" ybr="1693.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f5273603</attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="1260.00" ytl="795.00" xbr="1497.00" ybr="858.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f5273604</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1066.00" ytl="761.00" xbr="1251.00" ybr="846.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f5273608</attribute>
+    </box>
+  </image>
+  <image id="31" name="rain_image_36.jpg" width="3420" height="2214">
+    <box label="traffic light" source="manual" occluded="0" xtl="717.00" ytl="673.00" xbr="917.00" ybr="770.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f527360e</attribute>
+    </box>
+    <box label="pedestrian" source="manual" occluded="0" xtl="0.00" ytl="1268.89" xbr="538.79" ybr="2031.41" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="2343.00" ytl="181.00" xbr="2496.00" ybr="367.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f527360a</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="3068.00" ytl="1336.00" xbr="3420.00" ybr="1703.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f5273609</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1217.00" ytl="732.00" xbr="1397.00" ybr="823.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f527360d</attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="1426.00" ytl="763.00" xbr="1599.00" ybr="854.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f527360c</attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="1425.00" ytl="764.00" xbr="1505.00" ybr="851.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f5273610</attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="930.00" ytl="718.00" xbr="1215.00" ybr="791.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f527360b</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="2382.00" ytl="181.00" xbr="2497.00" ybr="357.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f527360f</attribute>
+    </box>
+  </image>
+  <image id="32" name="rain_image_37.jpg" width="3420" height="2214">
+    <box label="car" source="manual" occluded="0" xtl="1315.00" ytl="1444.00" xbr="1409.00" ybr="1508.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f5273612</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1727.00" ytl="1420.00" xbr="1834.00" ybr="1515.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f5273613</attribute>
+    </box>
+    <box label="pedestrian" source="manual" occluded="0" xtl="1034.17" ytl="1305.20" xbr="1202.75" ybr="1753.89" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1599.57" ytl="1432.29" xbr="1692.94" ybr="1512.69" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="2011.00" ytl="1402.00" xbr="2184.00" ybr="1548.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f5273611</attribute>
+    </box>
+  </image>
+  <image id="33" name="rain_image_38.jpg" width="3420" height="2214">
+    <box label="traffic sign" source="manual" occluded="0" xtl="3168.00" ytl="1088.00" xbr="3287.00" ybr="1254.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f5273615</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="3166.00" ytl="1086.00" xbr="3284.00" ybr="1259.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f5273617</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1716.00" ytl="1444.00" xbr="1918.00" ybr="1604.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f5273616</attribute>
+    </box>
+    <box label="pedestrian" source="manual" occluded="0" xtl="448.02" ytl="1253.33" xbr="678.85" ybr="2000.28" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1519.17" ytl="1193.67" xbr="1550.29" ybr="1243.00" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="bus" source="manual" occluded="0" xtl="1926.40" ytl="1292.23" xbr="2149.42" ybr="1538.62" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1651.44" ytl="1183.30" xbr="1679.97" ybr="1235.17" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1019.00" ytl="1440.00" xbr="1175.00" ybr="1548.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f5273614</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1783.70" ytl="1180.70" xbr="1809.65" ybr="1224.80" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="truck" source="manual" occluded="0" xtl="2069.01" ytl="1380.41" xbr="2437.30" ybr="1634.59" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="34" name="rain_image_39.jpg" width="3420" height="2214">
+    <box label="traffic light" source="manual" occluded="0" xtl="1625.51" ytl="1097.71" xbr="1656.63" ybr="1162.55" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1446.55" ytl="1100.31" xbr="1503.60" ybr="1180.71" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="2548.00" ytl="1454.00" xbr="2620.00" ybr="1592.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f5273619</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1792.00" ytl="1064.00" xbr="1838.00" ybr="1160.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f527361a</attribute>
+    </box>
+    <box label="bus" source="manual" occluded="0" xtl="2163.00" ytl="1240.00" xbr="2388.00" ybr="1530.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f5273618</attribute>
+    </box>
+    <box label="pedestrian" source="manual" occluded="0" xtl="525.82" ytl="1258.51" xbr="883.74" ybr="1919.88" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="truck" source="manual" occluded="0" xtl="2286.88" ytl="1287.00" xbr="3194.63" ybr="1868.01" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1596.98" ytl="1276.67" xbr="2066.42" ybr="1740.92" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1192.38" ytl="1429.69" xbr="1506.20" ybr="1642.37" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="3023.00" ytl="1354.00" xbr="3258.00" ybr="1559.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f527361b</attribute>
+    </box>
+  </image>
+  <image id="35" name="rain_image_4.jpg" width="3024" height="4032">
+    <box label="car" source="manual" occluded="0" xtl="2455.00" ytl="2789.00" xbr="3024.00" ybr="3158.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f527361c</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1203.00" ytl="2638.00" xbr="2126.00" ybr="3446.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f527361e</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1203.00" ytl="2639.00" xbr="2124.00" ybr="3443.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f527361f</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="2.00" ytl="2814.00" xbr="265.00" ybr="3103.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f5273623</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="2572.00" ytl="2565.00" xbr="3007.00" ybr="2732.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f5273622</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="768.00" ytl="2694.00" xbr="1178.00" ybr="3006.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f5273620</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="184.00" ytl="2679.00" xbr="828.00" ybr="3072.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f527361d</attribute>
+    </box>
+  </image>
+  <image id="36" name="rain_image_40.jpg" width="3420" height="2214">
+    <box label="car" source="manual" occluded="0" xtl="1121.00" ytl="1443.00" xbr="1345.00" ybr="1599.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f5273626</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="3002.00" ytl="1295.00" xbr="3420.00" ybr="2105.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f5273625</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1850.51" ytl="925.02" xbr="1914.68" ybr="1048.79" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="2111.79" ytl="945.65" xbr="2173.67" ybr="1064.83" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="2368.00" ytl="1066.00" xbr="2597.00" ybr="1126.00" z_order="0">
+      <attribute name="label_id">693a8b2a247682d7f5273624</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="440.96" ytl="1401.70" xbr="1080.41" ybr="1770.75" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="truck" source="manual" occluded="0" xtl="1651.10" ytl="1346.74" xbr="1985.73" ybr="1669.90" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="2267.64" ytl="1346.74" xbr="2868.13" ybr="1782.21" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1616.73" ytl="920.44" xbr="1669.44" ybr="1039.62" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="37" name="rain_image_41.jpg" width="3420" height="2214">
+    <box label="pedestrian" source="manual" occluded="0" xtl="651.82" ytl="1316.90" xbr="848.90" ybr="1704.28" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="bus" source="manual" occluded="0" xtl="1696.90" ytl="1360.49" xbr="1953.65" ybr="1585.10" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="38" name="rain_image_42.jpg" width="3420" height="2214">
+    <box label="traffic sign" source="manual" occluded="0" xtl="3162.00" ytl="396.00" xbr="3417.00" ybr="485.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273629</attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="3008.00" ytl="441.00" xbr="3420.00" ybr="805.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273627</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1307.32" ytl="1468.21" xbr="1454.00" ybr="1550.72" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1994.90" ytl="1422.37" xbr="2127.83" ybr="1527.80" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="2026.99" ytl="1289.44" xbr="2247.01" ybr="1365.07" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="truck" source="manual" occluded="0" xtl="379.08" ytl="1447.60" xbr="800.80" ybr="1674.49" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="2455.00" ytl="1357.00" xbr="2599.00" ybr="1440.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273628</attribute>
+    </box>
+  </image>
+  <image id="39" name="rain_image_43.jpg" width="3420" height="2214">
+    <box label="traffic sign" source="manual" occluded="0" xtl="2757.00" ytl="1194.00" xbr="3002.00" ybr="1305.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f527362a</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="2311.19" ytl="1408.62" xbr="2441.83" ybr="1495.72" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="40" name="rain_image_44.jpg" width="3420" height="2214">
+    <box label="traffic sign" source="manual" occluded="0" xtl="3002.00" ytl="1238.00" xbr="3304.00" ybr="1348.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f527362b</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1949.10" ytl="1417.79" xbr="2027.00" ybr="1481.96" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="truck" source="manual" occluded="0" xtl="2111.79" ytl="1387.99" xbr="2327.23" ybr="1546.14" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="2338.69" ytl="1351.32" xbr="2407.45" ybr="1456.75" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="1536.51" ytl="1319.24" xbr="1609.85" ybr="1422.40" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="41" name="rain_image_45.jpg" width="3420" height="2214">
+    <box label="traffic light" source="manual" occluded="0" xtl="2863.00" ytl="1303.00" xbr="2975.00" ybr="1412.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f527362f</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="963.00" ytl="1382.00" xbr="1421.00" ybr="1686.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f527362c</attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="1805.00" ytl="1058.00" xbr="2057.00" ybr="1251.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f527362d</attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="2094.00" ytl="1109.00" xbr="2409.00" ybr="1255.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f527362e</attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="1568.00" ytl="1053.00" xbr="1799.00" ybr="1259.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273630</attribute>
+    </box>
+    <box label="truck" source="manual" occluded="0" xtl="1811.55" ytl="1312.36" xbr="2088.87" ybr="1573.64" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="42" name="rain_image_46.jpg" width="3420" height="2214">
+    <box label="traffic sign" source="manual" occluded="0" xtl="1456.00" ytl="1033.00" xbr="1619.00" ybr="1083.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273635</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1601.00" ytl="1397.00" xbr="1831.00" ybr="1612.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273631</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="469.00" ytl="1159.00" xbr="539.00" ybr="1268.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273632</attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="2563.00" ytl="804.00" xbr="2689.00" ybr="984.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273633</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1626.00" ytl="1042.00" xbr="1726.00" ybr="1104.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273634</attribute>
+    </box>
+  </image>
+  <image id="43" name="rain_image_47.jpg" width="3420" height="2214">
+    <box label="bus" source="manual" occluded="0" xtl="1575.47" ytl="1287.15" xbr="1768.00" ybr="1422.37" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1651.11" ytl="1009.82" xbr="1733.60" ybr="1076.30" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="2185.13" ytl="1085.46" xbr="2276.81" ybr="1133.59" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="2157.63" ytl="986.90" xbr="2267.64" ybr="1051.08" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="44" name="rain_image_48.jpg" width="3420" height="2214">
+    <box label="traffic light" source="manual" occluded="0" xtl="1552.56" ytl="1154.22" xbr="1648.82" ybr="1202.35" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1497.55" ytl="1397.16" xbr="2029.28" ybr="1832.63" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1696.95" ytl="1163.38" xbr="1790.92" ybr="1211.51" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="2152.00" ytl="1390.00" xbr="2937.00" ybr="1892.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273636</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="220.00" ytl="1257.00" xbr="1160.00" ybr="1813.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273637</attribute>
+    </box>
+  </image>
+  <image id="45" name="rain_image_49.jpg" width="3420" height="2214">
+    <box label="traffic light" source="manual" occluded="0" xtl="1522.76" ytl="1193.18" xbr="1593.81" ybr="1220.68" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1016.20" ytl="1410.90" xbr="1156.05" ybr="1498.01" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1330.24" ytl="1422.37" xbr="1421.91" ybr="1484.26" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="1966.00" ytl="1001.00" xbr="2093.00" ybr="1089.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273638</attribute>
+    </box>
+  </image>
+  <image id="46" name="rain_image_5.jpg" width="3024" height="4032">
+  </image>
+  <image id="47" name="rain_image_50.jpg" width="3420" height="2214">
+    <box label="traffic sign" source="manual" occluded="0" xtl="1966.00" ytl="1001.00" xbr="2093.00" ybr="1089.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f527363a</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1541.10" ytl="1193.18" xbr="1584.64" ybr="1222.97" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1328.65" ytl="1414.09" xbr="1430.40" ybr="1487.60" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1020.40" ytl="1399.28" xbr="1158.06" ybr="1496.54" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="48" name="rain_image_51.jpg" width="3420" height="2214">
+    <box label="traffic sign" source="manual" occluded="0" xtl="1966.00" ytl="1001.00" xbr="2093.00" ybr="1089.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f527363b</attribute>
+    </box>
+  </image>
+  <image id="49" name="rain_image_52.jpg" width="3420" height="2214">
+    <box label="car" source="manual" occluded="0" xtl="1446.00" ytl="1220.00" xbr="1609.00" ybr="1358.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f527363d</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="0.00" ytl="1081.00" xbr="762.00" ybr="1893.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f527363c</attribute>
+    </box>
+    <box label="truck" source="manual" occluded="0" xtl="1025.80" ytl="1181.76" xbr="1374.92" ybr="1471.36" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1744.00" ytl="1255.00" xbr="1917.00" ybr="1365.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f527363f</attribute>
+    </box>
+    <box label="truck" source="manual" occluded="0" xtl="2451.00" ytl="183.00" xbr="3419.00" ybr="1605.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f527363e</attribute>
+    </box>
+  </image>
+  <image id="50" name="rain_image_53.jpg" width="3420" height="2214">
+    <box label="pedestrian" source="manual" occluded="0" xtl="500.94" ytl="1375.69" xbr="681.94" ybr="1898.01" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1814.49" ytl="1067.99" xbr="1850.69" ybr="1148.15" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1127.10" ytl="1424.30" xbr="1477.50" ybr="1670.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273640</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1420.00" ytl="1073.00" xbr="1465.00" ybr="1154.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273641</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1591.17" ytl="1221.34" xbr="2081.77" ybr="1764.30" rotation="0.70" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273642</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1612.80" ytl="1073.16" xbr="1651.59" ybr="1153.32" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="truck" source="manual" occluded="0" xtl="2360.08" ytl="1292.95" xbr="3353.00" ybr="1895.42" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="51" name="rain_image_54.jpg" width="3420" height="2214">
+    <box label="car" source="manual" occluded="0" xtl="2268.00" ytl="1444.00" xbr="2634.00" ybr="1787.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273645</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1762.78" ytl="1290.36" xbr="1796.39" ybr="1355.01" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1873.96" ytl="1290.36" xbr="1894.65" ybr="1339.49" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="2004.83" ytl="1292.22" xbr="2030.33" ybr="1347.47" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="1810.74" ytl="1283.72" xbr="1853.24" ybr="1321.97" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1225.00" ytl="1366.00" xbr="1655.00" ybr="1676.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f527364e</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="736.00" ytl="1448.00" xbr="1001.00" ybr="1655.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f527364d</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="2127.00" ytl="1415.00" xbr="2367.00" ybr="1704.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f527364c</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1774.00" ytl="1455.00" xbr="1983.00" ybr="1664.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f527364b</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="929.00" ytl="1447.00" xbr="1128.00" ybr="1617.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f527364a</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="3020.00" ytl="1313.00" xbr="3420.00" ybr="2104.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273649</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="0.00" ytl="1396.00" xbr="556.00" ybr="1730.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273648</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1112.00" ytl="1486.00" xbr="1240.00" ybr="1619.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273647</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="3019.00" ytl="1565.00" xbr="3420.00" ybr="2107.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273646</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1620.56" ytl="1290.36" xbr="1649.00" ybr="1352.42" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="485.00" ytl="1479.00" xbr="832.00" ybr="1679.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273644</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="2507.00" ytl="1355.00" xbr="3418.00" ybr="1975.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273643</attribute>
+    </box>
+  </image>
+  <image id="52" name="rain_image_55.jpg" width="3420" height="2214">
+    <box label="traffic sign" source="manual" occluded="0" xtl="970.00" ytl="1256.00" xbr="1111.00" ybr="1334.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273651</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1098.00" ytl="1018.00" xbr="1186.00" ybr="1164.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f527364f</attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="2236.26" ytl="1105.19" xbr="2288.18" ybr="1160.00" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="2161.26" ytl="1079.23" xbr="2207.41" ybr="1177.31" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="truck" source="manual" occluded="0" xtl="1792.03" ytl="1405.20" xbr="2034.33" ybr="1647.51" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="2365.00" ytl="1124.00" xbr="2564.00" ybr="1180.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273650</attribute>
+    </box>
+  </image>
+  <image id="53" name="rain_image_56.jpg" width="3420" height="2214">
+    <box label="traffic light" source="manual" occluded="0" xtl="2152.60" ytl="1191.73" xbr="2236.26" ybr="1232.12" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="bus" source="manual" occluded="0" xtl="2316.00" ytl="1217.00" xbr="2946.00" ybr="1639.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273652</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1950.40" ytl="1181.00" xbr="2033.50" ybr="1228.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273653</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="2034.33" ytl="1434.04" xbr="2236.26" ybr="1598.47" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="truck" source="manual" occluded="0" xtl="1693.95" ytl="1396.50" xbr="1982.41" ybr="1659.04" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="54" name="rain_image_57.jpg" width="3420" height="2214">
+    <box label="traffic light" source="manual" occluded="0" xtl="133.00" ytl="370.00" xbr="311.00" ybr="526.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273656</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="580.00" ytl="872.00" xbr="672.00" ybr="1086.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273654</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="415.00" ytl="854.00" xbr="531.00" ybr="1093.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273655</attribute>
+    </box>
+    <box label="truck" source="manual" occluded="0" xtl="2398.00" ytl="1428.00" xbr="3223.00" ybr="1756.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273657</attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="3095.00" ytl="1028.00" xbr="3225.00" ybr="1073.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273658</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="531.00" ytl="1241.00" xbr="628.00" ybr="1332.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273659</attribute>
+    </box>
+    <box label="bus" source="manual" occluded="0" xtl="2102.00" ytl="1321.00" xbr="2746.00" ybr="1738.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f527365b</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1159.00" ytl="1256.00" xbr="1208.00" ybr="1338.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f527365c</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1664.00" ytl="1484.00" xbr="1851.00" ybr="1643.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f527365d</attribute>
+    </box>
+    <box label="pedestrian" source="manual" occluded="0" xtl="1212.00" ytl="1465.00" xbr="1277.00" ybr="1655.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f527365e</attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="2877.00" ytl="175.00" xbr="3184.00" ybr="429.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f527365f</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="2561.00" ytl="770.88" xbr="2753.00" ybr="865.88" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f527365a</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="2103.57" ytl="753.27" xbr="2293.95" ybr="834.04" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="2792.99" ytl="770.58" xbr="2937.23" ybr="906.15" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="55" name="rain_image_58.jpg" width="3420" height="2214">
+    <box label="traffic light" source="manual" occluded="0" xtl="1827.34" ytl="1244.23" xbr="1910.50" ybr="1307.23" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="712.00" ytl="627.00" xbr="928.00" ybr="729.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273660</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="3244.00" ytl="1368.00" xbr="3420.00" ybr="1758.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273661</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1246.00" ytl="690.00" xbr="1448.00" ybr="793.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273662</attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="937.00" ytl="674.00" xbr="1237.00" ybr="759.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273663</attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="1708.00" ytl="1098.00" xbr="1807.00" ybr="1188.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273664</attribute>
+    </box>
+    <box label="pedestrian" source="manual" occluded="0" xtl="2686.60" ytl="1327.39" xbr="2908.40" ybr="1801.14" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="1479.59" ytl="727.64" xbr="1668.59" ybr="828.44" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="pedestrian" source="manual" occluded="0" xtl="1575.35" ytl="1370.23" xbr="1771.91" ybr="1700.34" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="57" name="rain_image_6.jpg" width="1179" height="2556">
+    <box label="truck" source="manual" occluded="0" xtl="1057.00" ytl="959.00" xbr="1177.00" ybr="1209.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f527366b</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="156.00" ytl="1006.00" xbr="1096.00" ybr="1492.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f527366a</attribute>
+    </box>
+  </image>
+  <image id="58" name="rain_image_60.jpg" width="3420" height="2214">
+    <box label="car" source="manual" occluded="0" xtl="2449.00" ytl="1213.00" xbr="3076.00" ybr="1666.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f527366c</attribute>
+    </box>
+    <box label="truck" source="manual" occluded="0" xtl="322.94" ytl="1027.51" xbr="834.49" ybr="1332.43" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="2079.34" ytl="1206.43" xbr="2316.21" ybr="1377.79" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="60" name="rain_image_62.jpg" width="3420" height="2214">
+    <box label="traffic sign" source="manual" occluded="0" xtl="2265.82" ytl="1027.51" xbr="2341.41" ybr="1098.07" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1217.00" ytl="1417.00" xbr="1537.00" ybr="1645.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f527366d</attribute>
+    </box>
+  </image>
+  <image id="61" name="rain_image_63.jpg" width="3420" height="2214">
+    <box label="car" source="manual" occluded="0" xtl="828.00" ytl="1454.00" xbr="957.00" ybr="1515.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f527366f</attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="2186.00" ytl="977.00" xbr="2533.00" ybr="1162.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f527366e</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1381.31" ytl="1425.67" xbr="1595.51" ybr="1571.82" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="3051.00" ytl="1400.00" xbr="3206.00" ybr="1521.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273670</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="2125.00" ytl="1425.00" xbr="2213.00" ybr="1497.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273671</attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="2374.00" ytl="925.00" xbr="2525.00" ybr="983.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273673</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1799.63" ytl="1435.75" xbr="1902.94" ybr="1526.46" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="2000.00" ytl="1429.00" xbr="2075.00" ybr="1487.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273674</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="997.00" ytl="1422.00" xbr="1183.80" ybr="1544.00" z_order="0">
+      <attribute name="label_id">693a8b2b247682d7f5273672</attribute>
+    </box>
+  </image>
+  <image id="62" name="rain_image_64.jpg" width="3420" height="2214">
+    <box label="car" source="manual" occluded="0" xtl="1424.15" ytl="1428.19" xbr="1512.35" ybr="1511.34" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1199.88" ytl="1438.26" xbr="1313.28" ybr="1511.34" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="63" name="rain_image_65.jpg" width="3420" height="2214">
+    <box label="traffic light" source="manual" occluded="0" xtl="1865.14" ytl="1095.55" xbr="1928.14" ybr="1148.47" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1794.59" ytl="1390.39" xbr="1988.62" ybr="1463.46" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="2595.90" ytl="1254.31" xbr="2699.25" ybr="1397.95" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="2122.18" ytl="841.04" xbr="2553.09" ybr="1055.23" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="990.00" ytl="1402.00" xbr="1260.00" ybr="1574.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f5273675</attribute>
+    </box>
+  </image>
+  <image id="64" name="rain_image_66.jpg" width="3420" height="2214">
+    <box label="car" source="manual" occluded="0" xtl="1895.38" ytl="1491.20" xbr="2061.70" ybr="1639.86" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1729.07" ytl="1481.10" xbr="1900.42" ybr="1591.98" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="65" name="rain_image_67.jpg" width="3420" height="2214">
+    <box label="car" source="manual" occluded="0" xtl="516.97" ytl="1481.10" xbr="756.37" ybr="1639.86" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="2225.50" ytl="810.80" xbr="2346.45" ybr="914.12" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1257.84" ytl="1440.78" xbr="1711.43" ybr="1660.02" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="2726.97" ytl="785.60" xbr="2847.92" ybr="891.44" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="0.38" ytl="1521.40" xbr="330.50" ybr="1647.42" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="66" name="rain_image_68.jpg" width="3420" height="2214">
+    <box label="truck" source="manual" occluded="0" xtl="2054.00" ytl="1262.00" xbr="2438.00" ybr="1502.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f5273677</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1379.00" ytl="1325.00" xbr="1544.00" ybr="1437.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f5273676</attribute>
+    </box>
+    <box label="truck" source="manual" occluded="0" xtl="1678.67" ytl="1188.79" xbr="1827.34" ybr="1392.91" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="67" name="rain_image_69.jpg" width="3420" height="2214">
+    <box label="truck" source="manual" occluded="0" xtl="990.00" ytl="940.00" xbr="1623.00" ybr="1548.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f5273678</attribute>
+    </box>
+  </image>
+  <image id="68" name="rain_image_7.jpg" width="1179" height="2556">
+    <box label="car" source="manual" occluded="0" xtl="64.00" ytl="994.00" xbr="367.00" ybr="1139.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f527367c</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="0.00" ytl="972.00" xbr="204.00" ybr="1219.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f527367a</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="945.00" ytl="1030.00" xbr="1179.00" ybr="1137.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f5273679</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="249.25" ytl="959.38" xbr="502.35" ybr="1131.03" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="42.00" ytl="991.00" xbr="304.00" ybr="1148.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f527367b</attribute>
+    </box>
+  </image>
+  <image id="69" name="rain_image_70.jpg" width="3420" height="2214">
+    <box label="traffic sign" source="manual" occluded="0" xtl="3022.00" ytl="1199.00" xbr="3088.00" ybr="1278.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f527367d</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1393.91" ytl="1297.15" xbr="1613.15" ybr="1476.06" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="70" name="rain_image_71.jpg" width="3420" height="2214">
+    <box label="car" source="manual" occluded="0" xtl="1897.90" ytl="1294.63" xbr="2039.02" ybr="1418.11" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="28.10" ytl="1153.51" xbr="1101.60" ybr="1796.10" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="2202.00" ytl="1157.00" xbr="3117.00" ybr="1720.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f527367f</attribute>
+    </box>
+    <box label="truck" source="manual" occluded="0" xtl="2202.00" ytl="1157.00" xbr="3118.00" ybr="1725.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f527367e</attribute>
+    </box>
+    <box label="truck" source="manual" occluded="0" xtl="1320.84" ytl="1244.23" xbr="1540.07" ybr="1435.75" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="71" name="rain_image_72.jpg" width="3420" height="2214">
+    <box label="car" source="manual" occluded="0" xtl="2518.00" ytl="1238.00" xbr="2848.00" ybr="1450.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f5273683</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1990.00" ytl="1259.00" xbr="2282.00" ybr="1491.80" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f5273681</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1028.00" ytl="1230.00" xbr="1457.00" ybr="1537.10" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f5273680</attribute>
+    </box>
+  </image>
+  <image id="72" name="rain_image_73.jpg" width="3420" height="2214">
+    <box label="car" source="manual" occluded="0" xtl="1108.00" ytl="1166.00" xbr="1618.00" ybr="1684.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f5273686</attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="1812.00" ytl="970.00" xbr="2085.00" ybr="1143.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f5273685</attribute>
+    </box>
+    <box label="bus" source="manual" occluded="0" xtl="1108.00" ytl="1167.00" xbr="1617.00" ybr="1688.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f5273684</attribute>
+    </box>
+    <box label="motorcycle" source="manual" occluded="0" xtl="2316.21" ytl="1390.39" xbr="2603.49" ybr="1773.42" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="2109.58" ytl="1087.99" xbr="2200.30" ybr="1266.91" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="73" name="rain_image_74.jpg" width="3420" height="2214">
+    <box label="motorcycle" source="manual" occluded="0" xtl="2699.57" ytl="1353.54" xbr="3015.23" ybr="1882.20" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="bus" source="manual" occluded="0" xtl="1907.00" ytl="1281.00" xbr="2242.00" ybr="1542.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f5273687</attribute>
+    </box>
+  </image>
+  <image id="74" name="rain_image_75.jpg" width="3420" height="2214">
+    <box label="bus" source="manual" occluded="0" xtl="1612.00" ytl="1326.00" xbr="1759.00" ybr="1506.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f5273689</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="2040.03" ytl="1412.57" xbr="2273.56" ybr="1546.01" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="motorcycle" source="manual" occluded="0" xtl="2635.41" ytl="1322.74" xbr="3063.99" ybr="2013.08" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="2484.00" ytl="1407.43" xbr="2789.39" ybr="1638.40" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="980.10" ytl="1438.23" xbr="1141.80" ybr="1558.85" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="75" name="rain_image_76.jpg" width="3420" height="2214">
+    <box label="motorcycle" source="manual" occluded="0" xtl="1718.00" ytl="1432.00" xbr="1814.00" ybr="1600.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f527368b</attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="1357.00" ytl="675.00" xbr="1897.00" ybr="951.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f527368a</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="2160.65" ytl="1343.28" xbr="2555.86" ybr="1551.15" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1321.50" ytl="1445.93" xbr="1511.37" ybr="1602.47" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="1352.00" ytl="599.00" xbr="1567.00" ybr="679.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f527368c</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1638.04" ytl="1299.02" xbr="1676.92" ybr="1334.36" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1465.18" ytl="1212.39" xbr="1521.63" ybr="1248.32" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1329.16" ytl="1220.09" xbr="1385.62" ybr="1253.45" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="77" name="rain_image_78.jpg" width="3420" height="2214">
+    <box label="car" source="manual" occluded="0" xtl="0.00" ytl="1476.00" xbr="1136.00" ybr="2107.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f5273690</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="2242.00" ytl="1135.00" xbr="2321.00" ybr="1252.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f5273693</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="157.80" ytl="411.00" xbr="506.57" ybr="544.65" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="872.79" ytl="396.42" xbr="1195.40" ybr="524.30" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="599.58" ytl="306.32" xbr="875.69" ybr="524.30" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="2244.00" ytl="853.00" xbr="2364.00" ybr="932.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f5273691</attribute>
+    </box>
+    <box label="motorcycle" source="manual" occluded="0" xtl="1783.00" ytl="1473.00" xbr="1946.00" ybr="1701.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f5273692</attribute>
+    </box>
+  </image>
+  <image id="78" name="rain_image_79.jpg" width="3420" height="2214">
+    <box label="traffic light" source="manual" occluded="0" xtl="1670.57" ytl="173.72" xbr="1803.70" ybr="419.50" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="2353.00" ytl="1382.00" xbr="2571.00" ybr="1534.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f5273694</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="847.90" ytl="170.31" xbr="1175.61" ybr="395.60" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="79" name="rain_image_8.jpg" width="1179" height="2556">
+    <box label="car" source="manual" occluded="0" xtl="145.50" ytl="1010.70" xbr="364.54" ybr="1140.60" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="pedestrian" source="manual" occluded="0" xtl="848.46" ytl="962.31" xbr="991.09" ybr="1255.21" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="80" name="rain_image_80.jpg" width="3420" height="2214">
+    <box label="traffic light" source="manual" occluded="0" xtl="1645.79" ytl="181.83" xbr="2022.80" ybr="268.83" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="pedestrian" source="manual" occluded="0" xtl="2284.39" ytl="1206.90" xbr="2766.22" ybr="2069.96" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="862.76" ytl="173.13" xbr="1204.97" ybr="289.13" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="81" name="rain_image_81.jpg" width="3420" height="2214">
+    <box label="car" source="manual" occluded="0" xtl="1158.60" ytl="1425.96" xbr="1338.38" ybr="1579.66" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1753.09" ytl="1423.10" xbr="2164.90" ybr="1675.37" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="pedestrian" source="manual" occluded="0" xtl="1863.30" ytl="1376.66" xbr="2017.00" ybr="1713.07" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="pedestrian" source="manual" occluded="0" xtl="1081.00" ytl="1355.00" xbr="1125.00" ybr="1506.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f5273695</attribute>
+    </box>
+  </image>
+  <image id="82" name="rain_image_82.jpg" width="3420" height="2214">
+    <box label="traffic sign" source="manual" occluded="0" xtl="1703.90" ytl="180.01" xbr="2449.06" ybr="297.99" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="pedestrian" source="manual" occluded="0" xtl="1768.17" ytl="1344.22" xbr="1971.58" ybr="1659.27" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="83" name="rain_image_83.jpg" width="3420" height="2214">
+    <box label="traffic light" source="manual" occluded="0" xtl="1697.67" ytl="679.89" xbr="1840.50" ybr="859.98" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1244.33" ytl="716.50" xbr="1412.03" ybr="856.12" rotation="359.40" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="pedestrian" source="manual" occluded="0" xtl="2896.16" ytl="1266.72" xbr="3302.90" ybr="1968.42" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="84" name="rain_image_84.jpg" width="3420" height="2214">
+    <box label="traffic sign" source="manual" occluded="0" xtl="1503.00" ytl="979.00" xbr="1831.00" ybr="1147.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f5273696</attribute>
+    </box>
+    <box label="pedestrian" source="manual" occluded="0" xtl="2557.70" ytl="1251.19" xbr="2852.69" ybr="1704.51" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1408.92" ytl="1425.07" xbr="1582.79" ybr="1571.00" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="motorcycle" source="manual" occluded="0" xtl="1700.78" ytl="1400.23" xbr="1812.56" ybr="1586.52" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="1502.00" ytl="929.00" xbr="1634.00" ybr="987.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f5273697</attribute>
+    </box>
+  </image>
+  <image id="85" name="rain_image_85.jpg" width="3420" height="2214">
+    <box label="traffic sign" source="manual" occluded="0" xtl="2055.00" ytl="1301.00" xbr="2151.00" ybr="1353.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f5273699</attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="1544.00" ytl="1103.00" xbr="1789.00" ybr="1244.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f5273698</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1117.06" ytl="1449.90" xbr="1297.14" ybr="1567.90" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="86" name="rain_image_86.jpg" width="3420" height="2214">
+    <box label="car" source="manual" occluded="0" xtl="1074.00" ytl="1434.00" xbr="1315.00" ybr="1648.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f527369a</attribute>
+    </box>
+  </image>
+  <image id="87" name="rain_image_87.jpg" width="3420" height="2214">
+    <box label="pedestrian" source="manual" occluded="0" xtl="2418.01" ytl="1335.02" xbr="2641.56" ybr="1741.76" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1561.06" ytl="1378.49" xbr="1793.93" ybr="1558.58" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="88" name="rain_image_88.jpg" width="3420" height="2214">
+    <box label="pedestrian" source="manual" occluded="0" xtl="3191.12" ytl="1338.13" xbr="3420.00" ybr="1800.76" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1433.76" ytl="1437.49" xbr="1514.49" ybr="1512.00" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="pedestrian" source="manual" occluded="0" xtl="2908.58" ytl="1353.65" xbr="3144.55" ybr="1847.33" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="89" name="rain_image_89.jpg" width="3420" height="2214">
+    <box label="car" source="manual" occluded="0" xtl="1623.16" ytl="1431.28" xbr="1731.83" ybr="1533.70" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="90" name="rain_image_9.jpg" width="3024" height="4032">
+    <box label="truck" source="manual" occluded="0" xtl="673.00" ytl="2122.00" xbr="1640.00" ybr="2410.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f527369c</attribute>
+    </box>
+  </image>
+  <image id="91" name="rain_image_90.jpg" width="3420" height="2214">
+    <box label="car" source="manual" occluded="0" xtl="692.00" ytl="1395.00" xbr="1179.00" ybr="1734.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f527369e</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1148.11" ytl="1381.60" xbr="1384.08" ybr="1605.15" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="1809.45" ytl="934.49" xbr="1893.28" ybr="1015.22" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1921.23" ytl="977.96" xbr="2029.90" ybr="1027.64" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="1663.52" ytl="959.33" xbr="1731.83" ybr="1033.85" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="412.00" ytl="1160.00" xbr="466.00" ybr="1235.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f527369f</attribute>
+    </box>
+  </image>
+  <image id="92" name="rain_image_91.jpg" width="3420" height="2214">
+    <box label="pedestrian" source="manual" occluded="0" xtl="2287.60" ytl="1344.34" xbr="2452.16" ybr="1775.92" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="2359.00" ytl="1387.00" xbr="3420.00" ybr="1961.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f52736a0</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="81.00" ytl="1354.00" xbr="599.00" ybr="1758.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f52736a2</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="2009.00" ytl="1449.00" xbr="2234.00" ybr="1671.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f52736a3</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="912.00" ytl="1321.00" xbr="1227.00" ybr="1615.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f52736a1</attribute>
+    </box>
+  </image>
+  <image id="93" name="rain_image_92.jpg" width="3420" height="2214">
+    <box label="car" source="manual" occluded="0" xtl="700.00" ytl="1436.00" xbr="1103.00" ybr="1662.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f52736a4</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1797.03" ytl="1394.02" xbr="1924.33" ybr="1521.32" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="pedestrian" source="manual" occluded="0" xtl="2175.83" ytl="1387.81" xbr="2268.97" ybr="1571.00" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="94" name="rain_image_93.jpg" width="3420" height="2214">
+    <box label="car" source="manual" occluded="0" xtl="1612.00" ytl="1471.00" xbr="1784.00" ybr="1626.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f52736a5</attribute>
+    </box>
+  </image>
+  <image id="95" name="rain_image_94.jpg" width="3420" height="2214">
+    <box label="traffic light" source="manual" occluded="0" xtl="2734.71" ytl="679.89" xbr="2874.43" ybr="794.77" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="3219.07" ytl="655.05" xbr="3321.53" ybr="751.31" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="2925.00" ytl="1380.00" xbr="3414.00" ybr="1550.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f52736a6</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1893.30" ytl="1375.39" xbr="2399.38" ybr="1636.20" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic sign" source="manual" occluded="0" xtl="3035.90" ytl="655.05" xbr="3163.18" ybr="776.14" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+  </image>
+  <image id="96" name="rain_image_95.jpg" width="3420" height="2214">
+    <box label="traffic sign" source="manual" occluded="0" xtl="2361.00" ytl="1289.00" xbr="2488.00" ybr="1432.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f52736a8</attribute>
+    </box>
+    <box label="truck" source="manual" occluded="0" xtl="0.00" ytl="182.00" xbr="1202.00" ybr="1888.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f52736a7</attribute>
+    </box>
+    <box label="truck" source="manual" occluded="0" xtl="1716.30" ytl="1387.81" xbr="1800.14" ybr="1499.58" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1685.26" ytl="1462.32" xbr="1741.14" ybr="1512.00" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1625.00" ytl="1447.00" xbr="1683.00" ybr="1494.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f52736a9</attribute>
+    </box>
+  </image>
+  <image id="97" name="rain_image_96.jpg" width="3420" height="2214">
+    <box label="traffic sign" source="manual" occluded="0" xtl="2799.00" ytl="1101.00" xbr="2939.00" ybr="1237.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f52736aa</attribute>
+    </box>
+  </image>
+  <image id="98" name="rain_image_97.jpg" width="3420" height="2214">
+    <box label="traffic light" source="manual" occluded="0" xtl="664.00" ytl="720.00" xbr="734.00" ybr="872.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f52736ad</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="2192.00" ytl="1402.00" xbr="2664.00" ybr="1606.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f52736ab</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="576.00" ytl="551.00" xbr="671.00" ybr="729.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f52736ac</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="2363.00" ytl="968.00" xbr="2498.00" ybr="1031.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f52736af</attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="977.00" ytl="884.00" xbr="1135.00" ybr="1128.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f52736b0</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="1806.35" ytl="1409.50" xbr="1967.80" ybr="1558.58" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="2803.01" ytl="1291.56" xbr="2849.59" ybr="1344.34" z_order="0">
+      <attribute name="label_id"></attribute>
+    </box>
+    <box label="traffic light" source="manual" occluded="0" xtl="2050.00" ytl="949.00" xbr="2174.00" ybr="1017.00" z_order="0">
+      <attribute name="label_id">693a8b2c247682d7f52736ae</attribute>
+    </box>
+  </image>
+</annotations>

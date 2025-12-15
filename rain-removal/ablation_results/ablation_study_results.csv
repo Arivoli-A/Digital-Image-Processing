@@ -1,0 +1,25 @@
+Method,Config,AP,AP50,AP75,AR,r,eps,wavelet,level,threshold,bilateral_d,sigma_color,sigma_space,hf_thresh,directionality_thresh,gamma,clahe_clip,sharpen_amount
+Baseline,No Preprocessing,0.0,0.0,0.0,0.0,,,,,,,,,,,,,
+Wavelet,Wavelet_Baseline,0.0,0.0,0.0,0.0,40.0,0.001,db1,1.0,0.05,,,,,,,,
+Wavelet,Wavelet_LowThresh,0.0,0.0,0.0,0.0,40.0,0.001,db1,1.0,0.03,,,,,,,,
+Wavelet,Wavelet_HighThresh,0.0,0.0,0.0,0.0,40.0,0.001,db1,1.0,0.08,,,,,,,,
+Wavelet,Wavelet_SmallRadius,0.0,0.0,0.0,0.0,20.0,0.001,db1,1.0,0.05,,,,,,,,
+Wavelet,Wavelet_LargeRadius,0.0,0.0,0.0,0.0,60.0,0.001,db1,1.0,0.05,,,,,,,,
+Wavelet,Wavelet_Haar,0.0,0.0,0.0,0.0,40.0,0.001,haar,1.0,0.05,,,,,,,,
+Wavelet,Wavelet_Bior13,0.0,0.0,0.0,0.0,40.0,0.001,bior1.3,1.0,0.05,,,,,,,,
+Wavelet,Wavelet_Level2,0.0,0.0,0.0,0.0,40.0,0.001,db1,2.0,0.05,,,,,,,,
+Wavelet,Wavelet_Aggressive,0.0,0.0,0.0,0.0,60.0,0.0005,db1,1.0,0.08,,,,,,,,
+Wavelet,Wavelet_Conservative,0.0,0.0,0.0,0.0,20.0,0.002,haar,1.0,0.03,,,,,,,,
+MCA,MCA_Baseline,0.0,0.0,0.0,0.0,,,,,,9.0,50.0,7.0,0.02,0.6,1.1,2.0,1.2
+MCA,MCA_WeakBilateral,0.0,0.0,0.0,0.0,,,,,,5.0,30.0,5.0,0.02,0.6,1.1,2.0,1.2
+MCA,MCA_StrongBilateral,0.0,0.0,0.0,0.0,,,,,,13.0,75.0,10.0,0.02,0.6,1.1,2.0,1.2
+MCA,MCA_SensitiveDetection,0.0,0.0,0.0,0.0,,,,,,9.0,50.0,7.0,0.01,0.5,1.1,2.0,1.2
+MCA,MCA_SelectiveDetection,0.0,0.0,0.0,0.0,,,,,,9.0,50.0,7.0,0.04,0.7,1.1,2.0,1.2
+MCA,MCA_LowGamma,0.0,0.0,0.0,0.0,,,,,,9.0,50.0,7.0,0.02,0.6,1.05,2.0,1.2
+MCA,MCA_HighGamma,0.0,0.0,0.0,0.0,,,,,,9.0,50.0,7.0,0.02,0.6,1.2,2.0,1.2
+MCA,MCA_LowCLAHE,0.0,0.0,0.0,0.0,,,,,,9.0,50.0,7.0,0.02,0.6,1.1,1.5,1.2
+MCA,MCA_HighCLAHE,0.0,0.0,0.0,0.0,,,,,,9.0,50.0,7.0,0.02,0.6,1.1,3.0,1.2
+MCA,MCA_LessSharp,0.0,0.0,0.0,0.0,,,,,,9.0,50.0,7.0,0.02,0.6,1.1,2.0,1.0
+MCA,MCA_MoreSharp,0.0,0.0,0.0,0.0,,,,,,9.0,50.0,7.0,0.02,0.6,1.1,2.0,1.4
+MCA,MCA_DetectorOptimized,0.0,0.0,0.0,0.0,,,,,,7.0,40.0,6.0,0.015,0.55,1.08,2.5,1.3
+MCA,MCA_Aggressive,0.0,0.0,0.0,0.0,,,,,,13.0,75.0,10.0,0.01,0.5,1.2,3.0,1.4

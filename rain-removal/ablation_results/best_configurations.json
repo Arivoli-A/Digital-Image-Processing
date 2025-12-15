@@ -1,0 +1,70 @@
+{
+  "best_overall": {
+    "method": "Baseline",
+    "config_name": "No Preprocessing",
+    "parameters": {
+      "r": NaN,
+      "eps": NaN,
+      "wavelet": NaN,
+      "level": NaN,
+      "threshold": NaN,
+      "bilateral_d": NaN,
+      "sigma_color": NaN,
+      "sigma_space": NaN,
+      "hf_thresh": NaN,
+      "directionality_thresh": NaN,
+      "gamma": NaN,
+      "clahe_clip": NaN,
+      "sharpen_amount": NaN
+    },
+    "metrics": {
+      "AP": 0.0,
+      "AP50": 0.0,
+      "AP75": 0.0,
+      "AR": 0.0
+    }
+  },
+  "best_wavelet": {
+    "config_name": "Wavelet_Baseline",
+    "parameters": {
+      "r": 40,
+      "eps": 0.001,
+      "wavelet": "db1",
+      "level": 1,
+      "threshold": 0.05
+    },
+    "metrics": {
+      "AP": 0.0,
+      "AP50": 0.0,
+      "AP75": 0.0,
+      "AR": 0.0
+    }
+  },
+  "best_mca": {
+    "config_name": "MCA_Baseline",
+    "parameters": {
+      "bilateral_d": 9,
+      "sigma_color": 50.0,
+      "sigma_space": 7.0,
+      "hf_thresh": 0.02,
+      "directionality_thresh": 0.6,
+      "gamma": 1.1,
+      "clahe_clip": 2.0,
+      "sharpen_amount": 1.2
+    },
+    "metrics": {
+      "AP": 0.0,
+      "AP50": 0.0,
+      "AP75": 0.0,
+      "AR": 0.0
+    }
+  },
+  "baseline": {
+    "metrics": {
+      "AP": 0.0,
+      "AP50": 0.0,
+      "AP75": 0.0,
+      "AR": 0.0
+    }
+  }
+}
