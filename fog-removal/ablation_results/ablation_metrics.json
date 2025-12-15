@@ -1,0 +1,78 @@
+{
+    "1_Standard_Comparison": {
+        "mode-baseline": {
+            "AP": 26.395715290029546,
+            "AP50": 44.61580379068252
+        },
+        "mode-hybrid": {
+            "AP": 24.734453288570695,
+            "AP50": 41.25623843633456
+        }
+    },
+    "2_DWT_Variations": {
+        "wavelet-db4_dwt_level-1_mode-hybrid": {
+            "AP": 24.734453288570695,
+            "AP50": 41.25623843633456
+        },
+        "wavelet-db4_dwt_level-2_mode-hybrid": {
+            "AP": 22.7702628316487,
+            "AP50": 38.11920977161965
+        },
+        "wavelet-haar_dwt_level-1_mode-hybrid": {
+            "AP": 24.30203063534989,
+            "AP50": 39.82508605127858
+        },
+        "wavelet-haar_dwt_level-2_mode-hybrid": {
+            "AP": 22.442916615473095,
+            "AP50": 37.41398322866873
+        }
+    },
+    "3_CLAHE_Variations": {
+        "clahe_clip_limit-1.0_clahe_tile_grid_size-(8, 8)_mode-hybrid": {
+            "AP": 24.357523884284785,
+            "AP50": 40.767804456466116
+        },
+        "clahe_clip_limit-4.0_clahe_tile_grid_size-(8, 8)_mode-hybrid": {
+            "AP": 24.573259710697588,
+            "AP50": 41.076102010555765
+        },
+        "clahe_clip_limit-2.0_clahe_tile_grid_size-(16, 16)_mode-hybrid": {
+            "AP": 24.79184690212044,
+            "AP50": 41.2672209617341
+        }
+    },
+    "4_DCP_Params": {
+        "patch_size-5_mode-baseline": {
+            "AP": 25.75474665987828,
+            "AP50": 43.62572501327875
+        },
+        "patch_size-5_mode-hybrid": {
+            "AP": 23.655833426605714,
+            "AP50": 39.68142466086632
+        },
+        "patch_size-30_mode-baseline": {
+            "AP": 27.1424386935603,
+            "AP50": 45.6220221405658
+        },
+        "patch_size-30_mode-hybrid": {
+            "AP": 24.999763384508004,
+            "AP50": 41.40856803560713
+        },
+        "omega-0.5_mode-baseline": {
+            "AP": 27.488382587546738,
+            "AP50": 46.32129093194895
+        },
+        "omega-0.5_mode-hybrid": {
+            "AP": 25.02511103408751,
+            "AP50": 41.482069017741246
+        },
+        "omega-0.8_mode-baseline": {
+            "AP": 27.071715792471885,
+            "AP50": 45.66507191482049
+        },
+        "omega-0.8_mode-hybrid": {
+            "AP": 25.22359576530089,
+            "AP50": 41.64602009446019
+        }
+    }
+}
